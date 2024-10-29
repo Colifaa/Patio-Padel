@@ -8,6 +8,7 @@ import Footer from "./Components/Footer";
 export default function App({ Component, pageProps }: AppProps) {
   return    <ChakraProvider >
     <WithSubnavigation/>
+    
   <Component {...pageProps} />
   <Footer/>
 </ChakraProvider>
