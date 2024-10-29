@@ -2,13 +2,12 @@ import "@/styles/globals.css";
 import { ChakraProvider } from '@chakra-ui/react';
 
 import type { AppProps } from "next/app";
-import WithSubnavigation from "./Components/WithSubnavigation";
-import Footer from "./Components/Footer";
+import WithSubnavigation from "../Components/WithSubnavigation";
+import Footer from "../Components/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return    <ChakraProvider >
-    <WithSubnavigation/>
-    
+    <WithSubnavigation/>   
   <Component {...pageProps} />
   <Footer/>
 </ChakraProvider>
