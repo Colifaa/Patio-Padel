@@ -15,6 +15,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Image,
 } from '@chakra-ui/react'
 import {
   HamburgerIcon,
@@ -50,12 +51,9 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
-            fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
-            Logo
-          </Text>
+        
+          <Image src='favicon.ico' alt='icono' boxSize='30px'/>
+      
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -243,22 +241,23 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Inspiration',
+    label: 'Academia',
     children: [
       {
-        label: 'Explore Design Work',
+        label: 'Membresias',
         subLabel: 'Trending Design to inspire you',
         href: '#',
       },
       {
-        label: 'New & Noteworthy',
+        label: 'Reservas',
         subLabel: 'Up-and-coming Designers',
         href: '#',
       },
     ],
   },
   {
-    label: 'Find Work',
+    label: 'Membresias',
+    href:"Membership",
     children: [
       {
         label: 'Job Board',
@@ -273,11 +272,8 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Learn Design',
-    href: '#',
+    label: 'Reservas',
+    href: '/reservas',
   },
-  {
-    label: 'Hire Designers',
-    href: '#',
-  },
+
 ]
