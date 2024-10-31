@@ -13,11 +13,11 @@ import {
 } from '@chakra-ui/react'
 import { ReactElement } from 'react'
 import {
-  FcAbout,
-  FcAssistant,
-  FcCollaboration,
-  FcDonate,
-  FcManager,
+  FcSportsMode,
+  FcBriefcase,
+  FcCalendar,
+  FcConferenceCall,
+  FcGlobe,
 } from 'react-icons/fc'
 
 interface CardProps {
@@ -27,7 +27,7 @@ interface CardProps {
   href: string
 }
 
-const Card = ({ heading, description, icon, }: CardProps) => {
+const Card = ({ heading, description, icon }: CardProps) => {
   return (
     <Box
       maxW={{ base: 'full', md: '275px' }}
@@ -44,7 +44,7 @@ const Card = ({ heading, description, icon, }: CardProps) => {
           justify={'center'}
           color={'white'}
           rounded={'full'}
-          bg={useColorModeValue('gray.100', 'gray.700')}>
+          bg={useColorModeValue('green.100', 'green.700')}>
           {icon}
         </Flex>
         <Box mt={2}>
@@ -53,8 +53,8 @@ const Card = ({ heading, description, icon, }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-          Learn more
+        <Button variant={'link'} colorScheme={'green'} size={'sm'}>
+          Más información
         </Button>
       </Stack>
     </Box>
@@ -66,45 +66,44 @@ export default function List() {
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
-          Short heading
+          Servicios y Beneficios
         </Heading>
         <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis obcaecati ut
-          cupiditate pariatur, dignissimos, placeat amet officiis.
+          Descubre todo lo que ofrecemos para que vivas una experiencia completa en nuestras canchas de pádel.
         </Text>
       </Stack>
 
       <Container maxW={'5xl'} mt={12}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           <Card
-            heading={'Heading'}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
-            href={'a'}
+            heading={'Alquiler de Canchas'}
+            icon={<Icon as={FcSportsMode} w={10} h={10} />}
+            description={'Alquila nuestras canchas de alta calidad para partidos individuales o dobles.'}
+            href={'#'}
           />
           <Card
-            heading={'Heading'}
-            icon={<Icon as={FcCollaboration} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
-            href={'l'}
+            heading={'Eventos y Torneos'}
+            icon={<Icon as={FcCalendar} w={10} h={10} />}
+            description={'Participa en nuestros torneos o organiza tu propio evento en nuestras instalaciones.'}
+            href={'#'}
           />
           <Card
-            heading={'Heading'}
-            icon={<Icon as={FcDonate} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
-            href={'s'}
+            heading={'Clases de Pádel'}
+            icon={<Icon as={FcBriefcase} w={10} h={10} />}
+            description={'Aprende a jugar o mejora tus habilidades con clases impartidas por profesionales.'}
+            href={'#'}
           />
           <Card
-            heading={'Heading'}
-            icon={<Icon as={FcManager} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
-            href={'b'}
+            heading={'Membresías Exclusivas'}
+            icon={<Icon as={FcConferenceCall} w={10} h={10} />}
+            description={'Accede a beneficios exclusivos y reserva canchas con prioridad.'}
+            href={'#'}
           />
           <Card
-            heading={'Heading'}
-            icon={<Icon as={FcAbout} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
-            href={'d'}
+            heading={'Red de Canchas'}
+            icon={<Icon as={FcGlobe} w={10} h={10} />}
+            description={'Forma parte de nuestra comunidad y juega en diferentes ubicaciones.'}
+            href={'#'}
           />
         </Flex>
       </Container>

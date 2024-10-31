@@ -1,6 +1,5 @@
 'use client'
 
-
 import {
   Box,
   Heading,
@@ -12,8 +11,15 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 
 export default function Inicio() {
+  const router = useRouter()
+
+  const handleReservaClick = () => {
+    router.push('/reservas')
+  }
+
   return (
     <>
       <Container maxW={'3xl'}>
@@ -21,41 +27,44 @@ export default function Inicio() {
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}>
+          py={{ base: 20, md: 36 }}
+        >
           <Heading
             fontWeight={600}
-            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-            lineHeight={'110%'}>
-            Make money from <br />
+            fontSize={{ base: '2xl', sm: '4xl', md: '5xl' }}
+            lineHeight={'110%'}
+          >
+            Reserva tus <br />
             <Text as={'span'} color={'green.400'}>
-              your audience
+              canchas de pádel
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
-            Monetize your content by charging your most loyal readers and reward them
-            loyalty points. Give back to your loyal readers by granting them access to
-            your pre-releases and sneak-peaks.
+          <Text color={'gray.500'} fontSize={'lg'}>
+            Disfruta de nuestras instalaciones de primer nivel y garantiza tu lugar en nuestras canchas con nuestro sistema de reservas. ¡Haz tu reserva y prepárate para jugar!
           </Text>
           <Stack
             direction={'column'}
             spacing={3}
             align={'center'}
             alignSelf={'center'}
-            position={'relative'}>
+            position={'relative'}
+          >
             <Button
+              onClick={handleReservaClick}
               colorScheme={'green'}
               bg={'green.400'}
               rounded={'full'}
               px={6}
               _hover={{
                 bg: 'green.500',
-              }}>
-              Get Started
+              }}
+            >
+              Reservar Ahora
             </Button>
             <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-              Learn more
+              Conoce más
             </Button>
-            <Box>
+            <Box position={'relative'}>
               <Icon
                 as={Arrow}
                 color={useColorModeValue('gray.800', 'gray.300')}
@@ -70,8 +79,9 @@ export default function Inicio() {
                 position={'absolute'}
                 right={'-125px'}
                 top={'-15px'}
-                transform={'rotate(10deg)'}>
-                Starting at $15/mo
+                transform={'rotate(10deg)'}
+              >
+                ¡Reserva desde $15!
               </Text>
             </Box>
           </Stack>
