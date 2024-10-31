@@ -1,3 +1,4 @@
+import { WobbleCardDemo } from "@/Components/WobbleCardDemo";
 import Inicio from "../Components/Inicio";
 
 import List from "../Components/List";
@@ -5,12 +6,11 @@ import List from "../Components/List";
 
 export default function Home() {
   return (
-    <div> 
-      
-<Inicio/>
-<List/>
-
-</div>
+    <div>
+      <Inicio />
+      <WobbleCardDemo />
+      <List />
+    </div>
 
   );
 }
