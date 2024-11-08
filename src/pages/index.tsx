@@ -1,14 +1,16 @@
 import { WobbleCardDemo } from "@/Components/WobbleCardDemo";
 import Inicio from "../Components/Inicio";
-
+import Carousel from "../Components/Carousel";
 import List from "../Components/List";
 import  {BackgroundBeamsWithCollisionDemo} from "../Components/BackgroundBeamsWithCollisionDemo";
+
 
 // import SplitWithImage from "../Components/SplitWithImage";
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ position: "relative", zIndex: 0 }}>
+      <Carousel/>
       <BackgroundBeamsWithCollisionDemo/>
       <Inicio />
       <WobbleCardDemo />

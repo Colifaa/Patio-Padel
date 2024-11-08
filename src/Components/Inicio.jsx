@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
+
 export default function Inicio() {
   const router = useRouter()
 
@@ -22,7 +23,9 @@ export default function Inicio() {
 
   return (
     <>
+        
       <Container maxW={'3xl'} position="relative">
+     
         <Stack
           as={Box}
           textAlign={'center'}

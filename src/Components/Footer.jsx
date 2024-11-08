@@ -6,16 +6,17 @@ const Footer = () => {
 
   return (
     <footer
-      className="w-full text-center p-8 md:p-16 bg-accent"
-      style={{
-        backgroundColor: "#561130",
-        backgroundImage: `url('/viejas locas.jpg')`,
-        backgroundSize: 'cover', // Cambiado a 'cover'
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        minHeight: '400px', // Ajusta la altura mínima del footer
-      }}
-    >
+    className="w-full text-center p-8 md:p-16 bg-accent"
+    style={{
+      backgroundColor: "#561130",
+      backgroundImage: `url('/viejas locas.jpg')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      minHeight: '400px',
+      position: 'absolute', 
+    }}
+  >
       <div className="flex items-center justify-center mb-6">
         <a
           className="inline-block mx-2"
