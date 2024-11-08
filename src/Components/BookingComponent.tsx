@@ -14,7 +14,7 @@ const BookingComponent: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center p-8 bg-gray-100 min-h-screen">
-      <div className="max-w-3xl w-full bg-white rounded-lg shadow-md p-6">
+      <div className="max-w-3xl w-full bg-white rounded-lg shadow-md p-6 relative">
         <h2 className="text-2xl font-bold text-center mb-4">Book a Court</h2>
         <p className="text-center text-gray-500 mb-6">Select your preferred date, time, and court</p>
         

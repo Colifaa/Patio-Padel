@@ -37,8 +37,9 @@ function PriceWrapper(props: Props) {
 
 export default function ThreeTierPricing() {
   return (
-    <Box py={12}>
-      <VStack spacing={2} textAlign="center">
+    <Box py={12} 
+    position="relative">
+      <VStack  spacing={2} textAlign="center">
         <Heading as="h1" fontSize="4xl">
           Plans that fit your need
         </Heading>
