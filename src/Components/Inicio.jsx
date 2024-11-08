@@ -22,26 +22,42 @@ export default function Inicio() {
 
   return (
     <>
-      <Container maxW={'3xl'}>
+      <Container maxW={'3xl'} position="relative">
         <Stack
           as={Box}
           textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           py={{ base: 20, md: 36 }}
         >
+          {/* Línea luminosa horizontal */}
+          <Box
+            position="absolute"
+            left={0}
+            top="40%"
+            width="100%" // Hace que la línea cruce toda la pantalla
+            height="4px" // Altura de la línea luminosa
+            bg="linear-gradient(45deg, #37769a, #5f9dc3)" // Gradiente verde para el rayo
+            boxShadow="0 0 20px rgba(154, 193, 217, 0.5)" // Efecto de resplandor
+            zIndex={-1} // Para que la línea esté debajo del texto
+          />
+          
+          {/* Título */}
           <Heading
             fontWeight={600}
             fontSize={{ base: '2xl', sm: '4xl', md: '5xl' }}
             lineHeight={'110%'}
           >
-            Reserva tus <br />
-            <Text as={'span'} color={'green.400'}>
-              canchas de pádel
+            titulo improvisado <br />
+            <Text as={'span'} color={'green.400'} >
+              subtitulo
             </Text>
           </Heading>
+
+          {/* Descripción */}
           <Text color={'gray.500'} fontSize={'lg'}>
             Disfruta de nuestras instalaciones de primer nivel y garantiza tu lugar en nuestras canchas con nuestro sistema de reservas. ¡Haz tu reserva y prepárate para jugar!
           </Text>
+
           <Stack
             direction={'column'}
             spacing={3}
@@ -87,6 +103,18 @@ export default function Inicio() {
           </Stack>
         </Stack>
       </Container>
+
+      {/* Estilos adicionales para la animación */}
+      <style jsx>{`
+        @keyframes pulse {
+          0% {
+            box-shadow: 0 0 8px rgba(72, 187, 120, 0.8);
+          }
+          100% {
+            box-shadow: 0 0 20px rgba(72, 187, 120, 1);
+          }
+        }
+      `}</style>
     </>
   )
 }
