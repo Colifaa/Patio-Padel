@@ -33,7 +33,7 @@ export default function Inicio() {
           <Box
             position="absolute"
             left={0}
-            top="40%"
+            top="41%"
             width="100%" // Hace que la línea cruce toda la pantalla
             height="4px" // Altura de la línea luminosa
             bg="linear-gradient(45deg, #37769a, #5f9dc3)" // Gradiente verde para el rayo
