@@ -12,7 +12,7 @@ import {
   createIcon,
 } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
-import ParticlesBg from "../Components/BgParticles/ParticlesBg";
+
 
 export default function Inicio() {
   const router = useRouter()
