@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Image, IconButton } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 
@@ -21,6 +21,15 @@ const Carousel = () => {
     const newIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 3000); // Cambia de imagen cada 3 segundos
+  
+    return () => clearInterval(interval); // Limpia el intervalo cuando el componente se desmonta
+  }, [currentIndex]);
+  
 
   return (
     <Box position="relative" width="full" overflow="hidden" borderRadius="lg">

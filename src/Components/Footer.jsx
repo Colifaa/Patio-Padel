@@ -8,7 +8,7 @@ const Footer = () => {
     <footer
     className="w-full text-center p-8 md:p-16 bg-accent"
     style={{
-      backgroundColor: "#561130",
+      backgroundColor: "#203C4C",
       backgroundImage: `url('/viejas locas.jpg')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
