@@ -21,7 +21,7 @@ const ParticlesBg = (props) => {
   const options = useMemo(() => {
     return {
       background: {
-        color: "#561130",
+        color: "#203C4C",
       },
       fullScreen: {
         enable: true,
@@ -52,9 +52,9 @@ const ParticlesBg = (props) => {
           type: "images",
           options: {
             image: {
-              src: "oneee.png",
-              width: "800vw",
-              height: "800vw",
+              src: ".png",
+              width: "80vw",
+              height: "80vw",
             },
           },
         },
@@ -62,13 +62,13 @@ const ParticlesBg = (props) => {
           value: particleCount,
         },
         color: {
-          value: "#E36414",
+          value: "#528caa",
         },
         links: {
           enable: true,
           distance: 200,
           color: {
-            value: "#E36414",
+            value: "#528caa",
           },
         },
         move: {
