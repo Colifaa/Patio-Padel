@@ -1,13 +1,4 @@
-import { Icon } from "@chakra-ui/react";
 import { HoverEffect } from "../Components/ui/card-hover-effect";
-
-import {
-  FcSportsMode,
-  FcBriefcase,
-  FcCalendar,
-  FcConferenceCall,
-  FcGlobe,
-} from 'react-icons/fc'
 
 export function CardHoverEffectDemo() {
   return (
@@ -16,43 +7,41 @@ export function CardHoverEffectDemo() {
     </div>
   );
 }
-
-
 export const projects = [
   {
-    heading: "Alquiler de Canchas",
-    icon: <Icon as={FcSportsMode} w={10} h={10} />,
-    description: "Alquila nuestras canchas de alta calidad para partidos individuales o dobles.",
-
+    title: "Stripe",
+    description:
+      "A technology company that builds economic infrastructure for the internet.",
+    link: "https://stripe.com",
   },
   {
-    heading: "Eventos y Torneos",
-    icon: <Icon as={FcCalendar} w={10} h={10} />,
-    description: "Participa en nuestros torneos o organiza tu propio evento en nuestras instalaciones.",
-
+    title: "Netflix",
+    description:
+      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+    link: "https://netflix.com",
   },
   {
-    heading: "Clases de Pádel",
-    icon: <Icon as={FcBriefcase} w={10} h={10} />,
-    description: "Aprende a jugar o mejora tus habilidades con clases impartidas por profesionales.",
-
+    title: "Google",
+    description:
+      "A multinational technology company that specializes in Internet-related services and products.",
+    link: "https://google.com",
   },
   {
-    heading: "Membresías Exclusivas",
-    icon: <Icon as={FcConferenceCall} w={10} h={10} />,
-    description: "Accede a beneficios exclusivos y reserva canchas con prioridad.",
-
+    title: "Meta",
+    description:
+      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+    link: "https://meta.com",
   },
   {
-    heading: "Red de Canchas",
-    icon: <Icon as={FcGlobe} w={10} h={10} />,
-    description: "Forma parte de nuestra comunidad y juega en diferentes ubicaciones.",
-
+    title: "Amazon",
+    description:
+      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+    link: "https://amazon.com",
   },
   {
-    heading: "Servicio de Entrenamiento",
-    icon: <Icon as={FcSportsMode} w={10} h={10} />,
-    description: "Entrena con profesionales para mejorar tu rendimiento en el pádel.",
-
+    title: "Microsoft",
+    description:
+      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+    link: "https://microsoft.com",
   },
 ];

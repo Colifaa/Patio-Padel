@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-
+import Link from "next/link";
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -8,11 +8,9 @@ export const HoverEffect = ({
   className,
 }: {
   items: {
-    heading: string;
-    icon: React.ReactNode;
+    title: string;
     description: string;
-    
-    
+    link: string;
   }[];
   className?: string;
 }) => {
@@ -21,42 +19,42 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
         className
       )}
     >
       {items.map((item, idx) => (
-
-<div className="relative group block p-2 h-full w-full"
-onMouseEnter={() => setHoveredIndex(idx)}
-onMouseLeave={() => setHoveredIndex(null)}>
-
-        
-       
+        <Link
+          href={item?.link}
+          key={item?.link}
+          className="relative group  block p-2 h-full w-full"
+          onMouseEnter={() => setHoveredIndex(idx)}
+          onMouseLeave={() => setHoveredIndex(null)}
+        >
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
                 className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
                 layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
+                initial={{ opacity: 1, transform: "translateZ(-100px) scale(0.9) rotate(-5deg)" }}
                 animate={{
                   opacity: 1,
+                  transform: "translateZ(-100px) scale(0.9) rotate(0deg)",
                   transition: { duration: 0.15 },
                 }}
                 exit={{
                   opacity: 0,
                   transition: { duration: 0.15, delay: 0.2 },
                 }}
+                key={hoveredIndex}  // Agregar una clave única para la animación
               />
             )}
           </AnimatePresence>
           <Card>
-            <CardIcon>{item.icon}</CardIcon>
-            <CardTitle>{item.heading}</CardTitle>
+            <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
-          </div>
-      
+        </Link>
       ))}
     </div>
   );
@@ -82,15 +80,6 @@ export const Card = ({
     </div>
   );
 };
-
-export const CardIcon = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="flex justify-center items-center mb-4">
-      {children}
-    </div>
-  );
-};
-
 export const CardTitle = ({
   className,
   children,
@@ -104,7 +93,6 @@ export const CardTitle = ({
     </h4>
   );
 };
-
 export const CardDescription = ({
   className,
   children,
