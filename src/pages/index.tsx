@@ -1,5 +1,5 @@
 import { WobbleCardDemo } from "@/Components/WobbleCardDemo";
-import Inicio from "../Components/Inicio";
+
 import List from "../Components/List";
 import  {BackgroundBeamsWithCollisionDemo} from "../Components/BackgroundBeamsWithCollisionDemo";
 import AboutCompany from "../Components/AboutCompany";
