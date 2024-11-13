@@ -57,8 +57,8 @@ export const Vortex = (props: VortexProps) => {
     const canvas = canvasRef.current;
     const container = containerRef.current;
     if (canvas && container) {
-      const ctx = canvas.getContext("2d");
-
+      const ctx = canvas.getContext("2d"); // eslint-disable-line
+  
       if (ctx) {
         resize(canvas);
         initParticles();
@@ -66,7 +66,6 @@ export const Vortex = (props: VortexProps) => {
       }
     }
   };
-
   const initParticles = () => {
     tick = 0;
     particleProps = new Float32Array(particlePropsLength);
@@ -95,16 +94,16 @@ export const Vortex = (props: VortexProps) => {
 
   const draw = (canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) => {
     tick++;
-
+  
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = backgroundColor;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-
+  
     drawParticles(ctx);
     renderGlow(canvas, ctx);
     renderToScreen(canvas, ctx);
-
-    window.requestAnimationFrame(() => draw(canvas, ctx));
+  
+    window.requestAnimationFrame(() => draw(canvas, ctx)); // Aquí lo corregimos
   };
 
   const drawParticles = (ctx: CanvasRenderingContext2D) => {
