@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider>
        <ParticlesBg />
-      <WithSubnavigation />
+      <WithSubnavigation/>
       <Component {...pageProps} />
       <Footer />
     </ChakraProvider>
