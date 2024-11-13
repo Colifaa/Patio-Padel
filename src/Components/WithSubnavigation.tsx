@@ -22,12 +22,13 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons'
+import Link from 'next/link'
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box    position="relative">
+    <Box position="relative">
       <Flex
       position="relative"
         bg={useColorModeValue('white', 'gray.800')}
@@ -52,8 +53,9 @@ export default function WithSubnavigation() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
         
-          <Image src='favicon.ico' alt='icono' boxSize='30px'/>
-      
+        <Link href="/">
+    <Image src='favicon.ico' alt='icono' boxSize='30px' cursor="pointer"/>
+  </Link>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -256,8 +258,8 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Membresias',
-    href:"Membership",
+    label: 'Sobre Nosotros',
+    href:"about",
     children: [
       {
         label: 'Job Board',
