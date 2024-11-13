@@ -71,10 +71,16 @@ export const BackgroundBeamsWithCollision = ({
     <div
       ref={parentRef}
       className={cn(
-        "h-96 md:h-[40rem] bg-gradient-to-b from-white to-neutral-100 dark:from-neutral-950 dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
-        // h-screen if you want bigger
+        "h-96 md:h-[40rem] relative flex items-center w-full justify-center overflow-hidden",
         className
       )}
+      style={{
+        backgroundImage: "url('https://media.pauta.cl/2023/09/arreglo-raquetas-pelotas-tenis-scaled-e1693844559891-1024x566.jpg')", // Cambia la ruta de la imagen aquí
+        backgroundSize: "cover", // Hace que la imagen cubra toda el área
+        backgroundPosition: "center", // Centra la imagen
+        backgroundAttachment: "fixed", // La imagen no se mueve al hacer scroll
+        imageRendering: "auto", // Intentar preservar la calidad de la imagen en escalas
+      }}
     >
       {beams.map((beam, index) => (
         <CollisionMechanism
