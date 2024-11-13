@@ -111,11 +111,10 @@ export const Vortex = (props: VortexProps) => {
       updateParticle(i, ctx);
     }
   };
-
   const updateParticle = (i: number, ctx: CanvasRenderingContext2D) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-
+  
     const i2 = 1 + i,
       i3 = 2 + i,
       i4 = 3 + i,
@@ -136,16 +135,19 @@ export const Vortex = (props: VortexProps) => {
     const y2 = y + vy * speed;
     const radius = particleProps[i8];
     const hue = particleProps[i9];
-
+  
     drawParticle(x, y, x2, y2, life, ttl, radius, hue, ctx);
-
+  
     particleProps[i] = x2;
     particleProps[i2] = y2;
     particleProps[i3] = vx;
     particleProps[i4] = vy;
     particleProps[i5] = life + 1;
-
-    (checkBounds(x, y, canvas) || life > ttl) && initParticle(i);
+  
+    // Reemplazamos el uso de `&&` por una declaración `if`
+    if (checkBounds(x, y, canvas) || life > ttl) {
+      initParticle(i);
+    }
   };
 
   const drawParticle = (
