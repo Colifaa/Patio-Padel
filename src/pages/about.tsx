@@ -3,17 +3,18 @@ import { FeaturesSectionDemo} from '@/Components/FeaturesSectionDemo'
 import { ImagesSliderDemo } from '@/Components/ImagesSliderDemo'
 import AboutUs  from '@/Components/AboutUs'
 
-
+import Feature  from '@/Components/Feature'
 import React from 'react'
 
 function about() {
   return (
     <div>
       <ImagesSliderDemo/>
-      <AboutUs/>
+
+      <Feature/>
       <FeaturesSectionDemo/>
       <AnimatedTestimonialsDemo/>
-
+    
     </div>
   )
 }

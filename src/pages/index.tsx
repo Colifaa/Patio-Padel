@@ -13,11 +13,9 @@ export default function Home() {
     <div style={{ position: "relative", zIndex: 0 }}>
       <BackgroundBeamsWithCollisionDemo/>
       <List />
-      <WobbleCardDemo />
       <AboutCompany/>
+      <WobbleCardDemo />
    
-    
-     
     </div>
 
   );
