@@ -1,18 +1,20 @@
 import React from "react";
 import { BackgroundBeamsWithCollision } from "../Components/ui/BackgroundBeamsWithCollision";
-
+import ButtonReserva from "./Buttons/ButtonReserva";
 
 export function BackgroundBeamsWithCollisionDemo() {
   return (
     <BackgroundBeamsWithCollision>
-      <div className="relative z-20 flex justify-center items-center w-full h-full">
+      <div className="relative z-20 flex flex-col justify-center items-center w-full h-full">
+        
         <img
           src="PATIO_PADEL_LOGO_BLACK_BG-removebg-preview (1).png" 
           alt="Logo"
           className="max-w-full max-h-full object-contain"
         />
+        <ButtonReserva />
+
       </div>
- 
     </BackgroundBeamsWithCollision>
   );
 }
