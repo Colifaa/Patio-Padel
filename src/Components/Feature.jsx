@@ -6,6 +6,7 @@ function Feature() {
     <Flex
     
       p={10} // Reducimos el padding general para pantallas pequeñas
+      color="red.100"
       w="full"
       justifyContent="center"
       alignItems="center"
@@ -14,6 +15,7 @@ function Feature() {
       <Box
         shadow="xl"
         bg="transparent"
+        color="red"
         px={8}
         py={10} // Reducimos el padding en el eje vertical
         mx="auto"
