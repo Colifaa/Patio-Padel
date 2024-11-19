@@ -18,7 +18,7 @@ const AboutCompany = () => {
   };
 
   return (
-    <section className="bg-[#1c3b5a] p-8 rounded-lg shadow-lg mt-10">
+    <section className="bg-[#1e466d] p-8 rounded-lg shadow-lg mt-10">
       <h2 className="text-3xl font-semibold text-center text-white mb-4">
         Sobre Nosotros
       </h2>
@@ -28,13 +28,13 @@ const AboutCompany = () => {
 
       <div className="text-center mt-6">
         <button
-          className="bg-[#2e5d82] text-white px-4 py-2 rounded hover:bg-[#254c6b] transition duration-200"
+          className="bg-[#2e5d82] text-white  px-4 py-2 rounded hover:bg-[#254c6b] transition duration-200"
           onClick={handleAboutClick}
         >
           + Sobre Patio Padel
         </button>
       </div>
-      <h3 className="text-2xl font-semibold text-center text-white mb-4">
+      <h3 className="text-2xl font-semibold text-center mt-4 text-white mb-4">
         ¿Qué Ofrecemos?
       </h3>
 
