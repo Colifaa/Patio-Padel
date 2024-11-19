@@ -243,7 +243,8 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Academia',
+    label: 'Conctacto',
+    href:"contact",
     children: [
       {
         label: 'Membresias',
