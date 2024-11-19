@@ -1,4 +1,16 @@
-import { Box, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Flex, Icon, chakra, useColorModeValue, Text, Link } from "@chakra-ui/react";
+import {
+  Box,
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Flex,
+  Icon,
+  chakra,
+  Text,
+  Link,
+} from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 // Definir el tipo de las props para FAQItem
@@ -10,7 +22,7 @@ interface FAQItemProps {
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, icon }) => {
   return (
-    <AccordionItem borderColor="gray.200" borderWidth="medium" _dark={{ borderColor: "#3E8EAC " }}>
+    <AccordionItem borderColor="#3E8EAC" borderWidth="medium">
       <AccordionButton>
         <Box flex="1" textAlign="left">
           <Flex alignItems="center" minH={12}>
@@ -21,8 +33,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, icon }) => {
               h={{ base: 8, md: 12 }}
               w={{ base: 8, md: 12 }}
               rounded="md"
-              bg="brand.500"
-            
+              bg="#203C4C" // Color manual
             >
               <Icon
                 boxSize={{ base: 4, md: 6 }}
@@ -35,16 +46,21 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, icon }) => {
               </Icon>
             </Flex>
             <Box ml={{ base: 2, md: 4 }}>
-              <chakra.dt fontSize="lg" fontWeight="medium" lineHeight="6" color="gray.900" _dark={{ color: "white" }}>
+              <chakra.dt
+                fontSize="lg"
+                fontWeight="medium"
+                lineHeight="6"
+                color="#203C4C" // Color manual
+              >
                 {question}
               </chakra.dt>
             </Box>
           </Flex>
         </Box>
-        <AccordionIcon  />
+        <AccordionIcon />
       </AccordionButton>
       <AccordionPanel pb={4}>
-        <chakra.dd mt={2} color="gray.500" _dark={{ color: "gray.300" }}>
+        <chakra.dd mt={2} color="#4A5568"> {/* Color manual */}
           {answer}
         </chakra.dd>
       </AccordionPanel>
@@ -53,11 +69,16 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, icon }) => {
 };
 
 const FAQSection: React.FC = () => {
-  const textColor = useColorModeValue("gray.900", "gray.100");
-
   return (
-    <Flex _dark={{ bg: "transparent" }} p={20} w="auto" justifyContent="center" alignItems="center">
-      <Box py={12} borderWidth="medium" borderColor="#3E8EAC" rounded="xl" shadow="base" w="100%">
+    <Flex bg="transparent" p={20} w="auto" justifyContent="center" alignItems="center">
+      <Box
+        py={12}
+        borderWidth="medium"
+        borderColor="#3E8EAC"
+        rounded="xl"
+        shadow="base"
+        w="100%"
+      >
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign="center">
             <chakra.h2
@@ -66,12 +87,17 @@ const FAQSection: React.FC = () => {
               lineHeight="8"
               fontWeight="extrabold"
               letterSpacing="tight"
-              color={textColor}
-              _dark={{ color: "gray.100" }}
+              color="#203C4C" // Color manual
             >
               Preguntas Frecuentes
             </chakra.h2>
-            <chakra.p mt={4} maxW="2xl" fontSize="xl" mx={{ lg: "auto" }} color="gray.500" _dark={{ color: "gray.300" }}>
+            <chakra.p
+              mt={4}
+              maxW="2xl"
+              fontSize="xl"
+              mx={{ lg: "auto" }}
+              color="#4A5568" // Color manual
+            >
               Encuentra respuestas a las preguntas más comunes sobre nuestros servicios en Patio Padel.
             </chakra.p>
           </Box>
@@ -86,7 +112,7 @@ const FAQSection: React.FC = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="2"
-                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9-3-9m-9 9a9 9 0 019-9"
                   />
                 }
               />
@@ -129,15 +155,14 @@ const FAQSection: React.FC = () => {
             </Accordion>
 
             <Box mt={6} textAlign="center">
-              <Text fontSize="lg" color="gray.600" _dark={{ color: "gray.400" }} mb={2}>
+              <Text fontSize="lg" color="#718096" mb={2}>
                 ¿Tienes más preguntas?
               </Text>
               <Link
                 href="mailto:support@example.com"
                 isExternal
                 fontSize="lg"
-                color="brand.600"
-                _dark={{ color: "brand.400" }}
+                color="#3E8EAC"
                 fontWeight="medium"
                 _hover={{ textDecoration: "none" }}
               >
