@@ -22,7 +22,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, icon }) => {
               w={{ base: 8, md: 12 }}
               rounded="md"
               bg="brand.500"
-              color="white"
+            
             >
               <Icon
                 boxSize={{ base: 4, md: 6 }}
@@ -41,7 +41,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, icon }) => {
             </Box>
           </Flex>
         </Box>
-        <AccordionIcon _dark={{ color: "white" }} />
+        <AccordionIcon  />
       </AccordionButton>
       <AccordionPanel pb={4}>
         <chakra.dd mt={2} color="gray.500" _dark={{ color: "gray.300" }}>
@@ -56,7 +56,7 @@ const FAQSection: React.FC = () => {
   const textColor = useColorModeValue("gray.900", "gray.100");
 
   return (
-    <Flex bg="gray.200" _dark={{ bg: "transparent" }} p={20} w="auto" justifyContent="center" alignItems="center">
+    <Flex _dark={{ bg: "transparent" }} p={20} w="auto" justifyContent="center" alignItems="center">
       <Box py={12} borderWidth="medium" borderColor="#3E8EAC" rounded="xl" shadow="base" w="100%">
         <Box maxW="7xl" mx="auto" px={{ base: 4, lg: 8 }}>
           <Box textAlign="center">
