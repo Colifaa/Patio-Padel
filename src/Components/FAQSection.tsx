@@ -80,20 +80,7 @@ const FAQSection: React.FC = () => {
             <Accordion allowToggle defaultIndex={[0]}>
               <FAQItem
                 question="¿Qué horarios tiene PATIO PADEL?"
-                answer={
-                  <>
-                    Durante la temporada de verano, nuestros horarios son:
-                    {[
-                      "Lunes a Jueves: 6:00 a 22:00",
-                      "Viernes y Sábados: 6:00am a 00:00",
-                      "Domingos: 6:00am a 22:00",
-                      "¡Te esperamos!"
-                    ].map((line, index) => (
-                      <div key={index}>{line}</div>
-                    ))}
-                  </>
-                }
-                
+                answer="Durante la temporada de verano, nuestros horarios son:   Lunes a Jueves: 6:00 a 22:00, Viernes y Sábados: 6:00am a 00:00, Domingos: 6:00am a 22:00, ¡Te esperamos!"
                 icon={
                   <path
                     strokeLinecap="round"
