@@ -16,7 +16,7 @@ import {
 import { ChevronDownIcon } from '@chakra-ui/icons'
 
 export default function FAQSection() {
-  const textColor = useColorModeValue('red.900', 'red.100')
+  const textColor = useColorModeValue('gray.900', 'gray.100')
 
   return (
     <Flex
