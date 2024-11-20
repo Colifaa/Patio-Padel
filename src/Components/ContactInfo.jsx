@@ -4,9 +4,7 @@ import { faEnvelope, faComments, faMapMarkerAlt } from "@fortawesome/free-solid-
 import { useInView } from "react-intersection-observer";
 
 const ContactInfo = () => {
-  // Creando las referencias de Intersection Observer
-  const { ref: titleRef, inView: titleInView } = useInView({ threshold: 0.1 });
-  const { ref: formRef, inView: formInView } = useInView({ threshold: 0.1 });
+  // Mantén solo las referencias necesarias
   const { ref: contactInfoRef, inView: contactInfoInView } = useInView({ threshold: 0.1 });
   const { ref: mapRef, inView: mapInView } = useInView({ threshold: 0.1 });
 
@@ -42,7 +40,6 @@ const ContactInfo = () => {
         </div>
       </Box>
 
-      {/* Sección del mapa de Google usando iframe */}
       <div
         ref={mapRef}
         className={`mt-8 transition-opacity duration-700 delay-300 ${
