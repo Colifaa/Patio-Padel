@@ -243,40 +243,20 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Conctacto',
-    href:"contact",
-    children: [
-      {
-        label: 'Membresias',
-        subLabel: 'Trending Design to inspire you',
-        href: '#',
-      },
-      {
-        label: 'Reservas',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
-      },
-    ],
-  },
-  {
-    label: 'Sobre Nosotros',
-    href:"about",
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
-      },
-    ],
+    label: 'Inicio',
+    href: '/',
   },
   {
     label: 'Reservas',
     href: '/reservas',
   },
-
+  {
+    label: 'Sobre Nosotros',
+    href: '/about',
+  },
+  {
+    label: 'Contacto',
+    href: '/contact',
+  },
 ]
+
