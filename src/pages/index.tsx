@@ -4,7 +4,7 @@ import AboutCompany from "../Components/AboutCompany";
 import AboutUs from "@/Components/AboutUs";
 import { StickyScrollRevealDemo } from "@/Components/StickyScrollRevealDemo";
 import FAQSection from "@/Components/FAQSection";
-
+import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <CardHoverEffectDemo />
       <AboutCompany />
       <FAQSection/>
+      <Footer />
     </div>
 
   );
