@@ -13,7 +13,6 @@ import {
   Heading,
 } from '@chakra-ui/react'
 
-import Head from 'next/head'
 
 import { ChevronDownIcon } from '@chakra-ui/icons'
 
