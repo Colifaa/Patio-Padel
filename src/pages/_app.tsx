@@ -3,7 +3,6 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 import type { AppProps } from "next/app";
 import WithSubnavigation from "../Components/WithSubnavigation";
-import Footer from "../Components/Footer";
 import ParticlesBg from "../Components/BgParticles/ParticlesBg";
 import Wsp from "@/Components/WsP";
 

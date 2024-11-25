@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Box } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
 function Wsp() {
   return (
