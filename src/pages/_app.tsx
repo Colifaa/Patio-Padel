@@ -5,6 +5,8 @@ import type { AppProps } from "next/app";
 import WithSubnavigation from "../Components/WithSubnavigation";
 import Footer from "../Components/Footer";
 import ParticlesBg from "../Components/BgParticles/ParticlesBg";
+import Wsp from "@/Components/WsP";
+
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
        <ParticlesBg />
       <WithSubnavigation/>
       <Component {...pageProps} />
-      <Footer />
+      <Wsp/>
     </ChakraProvider>
   );
 }

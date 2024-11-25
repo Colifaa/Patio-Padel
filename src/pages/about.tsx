@@ -5,6 +5,7 @@ import { ImagesSliderDemo } from '@/Components/ImagesSliderDemo'
 
 import Feature  from '@/Components/Feature'
 import React from 'react'
+import Footer from '@/Components/Footer'
 
 function about() {
   return (
@@ -13,6 +14,7 @@ function about() {
       <Feature/>
       <FeaturesSectionDemo/>
       <AnimatedTestimonialsDemo/>
+      <Footer />
     
     </div>
   )

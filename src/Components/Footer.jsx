@@ -14,7 +14,7 @@ const Footer = () => {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
       minHeight: '400px',
-      position: 'absolute', 
+      position: 'relative', 
     }}
   >
       <div className="flex items-center justify-center mb-6">
