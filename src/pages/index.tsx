@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <div style={{ position: "relative", zIndex: 0 }}>
       <BackgroundBeamsWithCollisionDemo />
-      <AboutUs />
       <CardHoverEffectDemo />
       <AboutCompany />
       <InfiniteMovingCardsDemo/>
