@@ -13,22 +13,24 @@ import {
   Heading,
 } from '@chakra-ui/react'
 
-
 import { ChevronDownIcon } from '@chakra-ui/icons'
 
 export default function FAQSection() {
-  const textColor = useColorModeValue('gray.900', 'gray.100')
-  const baseColor = '#203c4c'
-  const accentColor = '#f4f4f4'
+  const textColor = useColorModeValue('black', 'black');
+  const baseColor = '#D2E9E9'
+  const accentColor = 'black'
   const hoverColor = useColorModeValue('#365867', '#1b2d38')
 
   return (
     <>
+      {/* Fuentes definidas */}
       <Box>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Alilata:wght@400&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Garamond&display=swap"
           rel="stylesheet"
         />
       </Box>
@@ -47,16 +49,18 @@ export default function FAQSection() {
             <Heading
               as="h2"
               size="xl"
-              fontFamily="Permanent Marker, cursive"
+              fontFamily="Garamond, serif" // Fuente Garamond para títulos
               color={accentColor}
               mb={4}
+              
             >
               Preguntas Frecuentes
             </Heading>
             <Text
-              color="gray.300"
-              fontFamily="Permanent Marker, cursive"
-              _dark={{ color: 'gray.400' }}
+              color={accentColor}
+              fontFamily="Alilata, serif" // Fuente Alilata para el texto
+              fontWeight="semibold"
+  
             >
               Encuentra respuestas a las preguntas más comunes sobre nuestros servicios
               en Patio Padel.
@@ -64,7 +68,15 @@ export default function FAQSection() {
           </Box>
 
           {/* Acordeón con las preguntas y respuestas */}
-          <Accordion allowMultiple width="100%" fontFamily="Permanent Marker, cursive" bg={baseColor} rounded="lg" shadow="md" p={4}>
+          <Accordion
+            allowMultiple
+            width="100%"
+            fontFamily="Garamond, serif" // Fuente Garamond para el acordeón
+            bg={baseColor}
+            rounded="lg"
+            shadow="md"
+            p={4}
+          >
             {/* Pregunta 1 */}
             <AccordionItem>
               {({ isExpanded }) => (
@@ -79,7 +91,7 @@ export default function FAQSection() {
                     _hover={{ bg: hoverColor }}
                     transition="background-color 0.3s"
                   >
-                    <Text fontSize="md" color="white" fontWeight="semibold">
+                    <Text fontSize="md" color="black" fontWeight="semibold">
                       ¿Qué horarios tiene PATIO PADEL?
                     </Text>
                     <ChevronDownIcon fontSize="24px" color={textColor} />
