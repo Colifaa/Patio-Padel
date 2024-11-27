@@ -8,7 +8,6 @@ function contact() {
   return (
     <div>
     <ContactSection />
-      <WobbleCardDemo />
       <Footer />
     </div>
   )
