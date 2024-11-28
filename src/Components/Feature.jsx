@@ -1,4 +1,4 @@
-import { Box, Button, Flex, SimpleGrid, chakra } from '@chakra-ui/react'
+import { Box, Flex, SimpleGrid, chakra } from '@chakra-ui/react'
 import React from 'react'
 
 function Feature() {
