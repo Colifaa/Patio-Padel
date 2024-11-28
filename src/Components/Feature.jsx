@@ -1,4 +1,4 @@
-import { Box, Button, Flex, SimpleGrid, chakra } from '@chakra-ui/react'
+import { Box, Flex, SimpleGrid, chakra } from '@chakra-ui/react'
 import React from 'react'
 
 function Feature() {
@@ -39,7 +39,8 @@ function Feature() {
         >
           <Box>
             <chakra.h2
-              mb={4}
+            mt="20"
+              mb={5}
               fontSize={{
                 base: "xl", // Tamaño de fuente más pequeño en pantallas pequeñas
                 md: "4xl",
@@ -57,7 +58,7 @@ function Feature() {
               }}
               textShadow="2px 0 currentcolor"
             >
-              Clear overview for efficient tracking
+              Un espacio único para tu mejor rendimiento
             </chakra.h2>
             <chakra.p
               mb={5}
@@ -71,25 +72,10 @@ function Feature() {
                 md: "lg",
               }}
             >
-              Handle your subscriptions and transactions efficiently with the clear
-              overview in Dashboard. Features like the smart search option allow you
-              to quickly find any data you’re looking for.
+            Nos apasiona ofrecer un lugar único donde jugadores de todos los niveles puedan disfrutar del pádel en su máxima expresión. 
+            Contamos con instalaciones de calidad, un ambiente amigable y un equipo comprometido con brindarte la mejor experiencia.
             </chakra.p>
-            <Button
-              w={{
-                base: "full",
-                sm: "auto",
-              }}
-              size="lg"
-              bg="white"
-              color="#203C4C"
-              _hover={{
-                bg: "gray.100",
-              }}
-              as="a"
-            >
-              Learn More
-            </Button>
+         
           </Box>
           <Box
             w="full"
@@ -148,7 +134,7 @@ function Feature() {
                 md: "shorter",
               }}
             >
-              Decide how you integrate Payments
+             Tu experiencia en el juego, a tu manera
             </chakra.h2>
             <chakra.p
               mb={5}
@@ -162,25 +148,10 @@ function Feature() {
                 md: "lg",
               }}
             >
-              Love to code? Next to our ready-made and free plugins you can use our
-              expansive yet simple API; decide how you integrate Payments and build
-              advanced and reliable products yourself from scratch.
+             Creemos que cada jugador tiene su propio estilo. Por eso, ofrecemos un espacio flexible y adaptado a tus necesidades, 
+             donde podrás disfrutar del pádel a tu propio ritmo, con acceso a todas nuestras canchas y servicios de la manera que prefieras.
             </chakra.p>
-            <Button
-              w={{
-                base: "full",
-                sm: "auto",
-              }}
-              size="lg"
-              bg="white"
-              color="#203C4C"
-              _hover={{
-                bg: "gray.100",
-              }}
-              as="a"
-            >
-              Learn More
-            </Button>
+       
           </Box>
           <Box
             w="full"
