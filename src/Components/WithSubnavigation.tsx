@@ -28,17 +28,20 @@ export default function WithSubnavigation() {
 
   return (
     <Box position="relative">
-      <Flex
-      position="relative"
-        bg={useColorModeValue('white', 'gray.800')}
-        color={useColorModeValue('gray.600', 'white')}
-        minH={'60px'}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={'solid'}
-        borderColor={useColorModeValue('gray.200', 'gray.900')}
-        align={'center'}>
+  <Flex
+  position="relative"
+  bg="#203C4C" // Cambia el fondo aquí
+  color="white" // Ajusta el color del texto para mejor contraste
+  minH={'80px'}
+  py={{ base: 2 }}
+  px={{ base: 4 }}
+  borderBottom={1}
+  borderStyle={'solid'}
+  borderColor="#203C4C" // Ajusta el borde al mismo color si deseas
+  align={'center'}
+  justify="space-between" // Espaciado adecuado entre logo y opciones>
+       
+      >
         <Flex
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
@@ -53,12 +56,20 @@ export default function WithSubnavigation() {
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
         
         <Link href="/">
-    <Image src='PATIO_PADEL_LOGO_BLACK_BG-removebg-preview.png' alt='icono' boxSize='20px' width="50" height="39" cursor="pointer"/>
+        <Image
+    src="PATIO_PADEL_LOGO_BLACK_BG-removebg-preview.png"
+    alt="icono"
+    width="110px" // Más ancho para evitar que se vea apretado
+    height="60px"
+    objectFit="contain" // Mantiene las proporciones del ícono
+    cursor="pointer"
+    padding="10px" // Añade espacio alrededor del ícono
+  />
   </Link>
 
-          <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-            <DesktopNav />
-          </Flex>
+  <Flex display={{ base: 'none', md: 'flex' }} align= "center" ml="auto"> 
+  <DesktopNav />
+</Flex>
         </Flex>
 
       
@@ -72,7 +83,7 @@ export default function WithSubnavigation() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('gray.600', 'gray.200')
+  const linkColor = useColorModeValue('black', 'black')
   const linkHoverColor = useColorModeValue('gray.800', 'white')
   const popoverContentBgColor = useColorModeValue('white', 'gray.800')
 

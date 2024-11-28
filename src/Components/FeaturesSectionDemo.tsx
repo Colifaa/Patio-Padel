@@ -1,65 +1,69 @@
 import { cn } from "@/lib/utils";
 import {
   IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
   IconHeart,
-  IconHelp,
+  IconCloud,
   IconRouteAltLeft,
+  IconEaseInOut,
+  IconHelp,
+  IconCurrencyDollar,
   IconTerminal2,
 } from "@tabler/icons-react";
 
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Canchas de Alta Calidad",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
+        "Nuestras canchas están diseñadas para brindarte la mejor experiencia en cada partido, con superficies de última generación.",
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ease of use",
+      title: "Acceso fácil y rápido",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
+        "Reserva tu cancha de manera sencilla y rápida desde nuestra plataforma, ¡y listo para jugar!",
       icon: <IconEaseInOut />,
     },
     {
-      title: "Pricing like no other",
+      title: "Precios competitivos",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
+        "Ofrecemos tarifas muy competitivas para que disfrutes de tu deporte favorito sin preocuparte por el costo.",
       icon: <IconCurrencyDollar />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
+      title: "Canchas cubiertas y al aire libre",
+      description:
+        "Contamos con opciones de canchas cubiertas y al aire libre, para que puedas jugar sin importar las condiciones del clima.",
       icon: <IconCloud />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
+      title: "Ubicación estratégica",
+      description:
+        "Estamos ubicados en una zona de fácil acceso, para que puedas disfrutar del pádel sin complicaciones de desplazamiento.",
       icon: <IconRouteAltLeft />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "Atención al cliente 24/7",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
+        "Nuestro equipo está disponible todo el tiempo para responder cualquier duda o resolver inconvenientes durante tu visita.",
       icon: <IconHelp />,
     },
     {
-      title: "Money back guarantee",
+      title: "Reserva flexible",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
+        "Puedes hacer tu reserva con facilidad, adaptándote a tu horario y disponibilidad, incluso en el último minuto.",
       icon: <IconAdjustmentsBolt />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
+      title: "Todo lo que necesitas para jugar",
+      description:
+        "Además de las canchas, tenemos todos los accesorios y servicios para que tu experiencia de pádel sea perfecta.",
       icon: <IconHeart />,
     },
   ];
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10 max-w-7xl mx-auto">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}
@@ -81,7 +85,7 @@ const Feature = ({
   return (
     <div
       className={cn(
-        "flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800",
+        "flex flex-col lg:border-r py-10 relative group/feature dark:border-neutral-800",
         (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
         index < 4 && "lg:border-b dark:border-neutral-800"
       )}
@@ -96,7 +100,7 @@ const Feature = ({
         {icon}
       </div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
-        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
+        <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-slate-900 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
         <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
           {title}
         </span>
