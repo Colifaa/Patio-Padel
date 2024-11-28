@@ -54,7 +54,7 @@ export default function WithSubnavigation() {
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
         
         <Link href="/">
-    <Image src='favicon.ico' alt='icono' boxSize='30px' cursor="pointer"/>
+    <Image src='PATIO_PADEL_LOGO_BLACK_BG-removebg-preview.png' alt='icono' boxSize='20px' width="50" height="39" cursor="pointer"/>
   </Link>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -62,28 +62,7 @@ export default function WithSubnavigation() {
           </Flex>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={'flex-end'}
-          direction={'row'}
-          spacing={6}>
-          <Button as={'a'} fontSize={'sm'} fontWeight={400} variant={'link'} href={'#'}>
-            Sign In
-          </Button>
-          <Button
-            as={'a'}
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            bg={'pink.400'}
-            href={'#'}
-            _hover={{
-              bg: 'pink.300',
-            }}>
-            Sign Up
-          </Button>
-        </Stack>
+      
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
@@ -242,10 +221,7 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: 'Inicio',
-    href: '/',
-  },
+ 
   {
     label: 'Reservas',
     href: '/reservas',
