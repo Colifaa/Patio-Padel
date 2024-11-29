@@ -4,39 +4,47 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/04/one-piece-3006218.jpg?tf=3840x",
+        "Las canchas de Patio Pádel son increíbles. La superficie es perfecta para jugar y las instalaciones son muy cómodas.",
+      name: "Laura Fernández",
+      designation: "Jugadora amateur",
+      src: "/Laura.png",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/04/one-piece-3006218.jpg?tf=3840x",
+        "Me encanta jugar en Patio Pádel. Siempre está limpio y bien organizado. ¡Es mi lugar favorito para el pádel!",
+      name: "Juan Pérez",
+      designation: "Jugador recreativo",
+      src: "/Deportista2.png",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/04/one-piece-3006218.jpg?tf=3840x",
+        "Las mejores canchas de pádel en la ciudad. Además, tienen un ambiente genial para disfrutar con amigos.",
+      name: "Ana López",
+      designation: "Fanática del deporte",
+      src: "/Ana.png",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/04/one-piece-3006218.jpg?tf=3840x",
+        "El ambiente es espectacular, y el personal siempre está dispuesto a ayudar. ¡Recomiendo Patio Pádel a todos!",
+      name: "Carlos Medina",
+      designation: "Jugador profesional",
+      src: "/Deportista.png",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/04/one-piece-3006218.jpg?tf=3840x",
+        "Excelente lugar para jugar al pádel. Las instalaciones son de primera categoría y el servicio es impecable.",
+      name: "Sofía Martínez",
+      designation: "Amante del deporte",
+      src: "/Mari.png",
     },
   ];
-  return <AnimatedTestimonials testimonials={testimonials} />;
+
+  return (
+    <div>
+      <h2 className="text-2xl font-bold text-center my-6">
+        ¿Qué opinan nuestros clientes?
+      </h2>
+      <AnimatedTestimonials testimonials={testimonials} />
+    </div>
+  );
 }

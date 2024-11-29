@@ -3,6 +3,10 @@ import React from 'react';
 import { TextGenerateEffectDemo } from '../TextGenerateEffectDemo';
 
 function ButtonReserva() {
+  const handleRedirect = () => {
+    window.open("https://atcsports.io/venues/patio-padel-lima", "_blank"); // Abre el enlace en una nueva pestaña
+  };
+
   return (
     <>
       <Box>
@@ -27,6 +31,7 @@ function ButtonReserva() {
         </div>
 
         <button
+          onClick={handleRedirect} // Añadir la funcionalidad al clic
           className="relative inline-flex h-12 active:scale-95 transition-transform overflow-hidden rounded-lg p-[1px] focus:outline-none"
         >
           <span

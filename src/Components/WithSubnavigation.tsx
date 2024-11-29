@@ -57,9 +57,9 @@ export default function WithSubnavigation() {
         
         <Link href="/">
         <Image
-    src="PATIO_PADEL_LOGO_BLACK_BG-removebg-preview.png"
+    src="Prueba.png"
     alt="icono"
-    width="110px" // Más ancho para evitar que se vea apretado
+    width="160px" // Más ancho para evitar que se vea apretado
     height="60px"
     objectFit="contain" // Mantiene las proporciones del ícono
     cursor="pointer"
@@ -232,10 +232,7 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
  
-  {
-    label: 'Reservas',
-    href: '/reservas',
-  },
+ 
   {
     label: 'Sobre Nosotros',
     href: '/about',

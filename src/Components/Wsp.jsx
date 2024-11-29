@@ -6,7 +6,7 @@ function Wsp() {
     <Box
 
       as="a"
-      href="https://wa.me/542604224940"
+      href="https://wa.me/+51919499957"
       target="_blank"
       rel="noopener noreferrer"
       position="fixed"
