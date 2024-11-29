@@ -92,13 +92,8 @@ export const CardTitle = ({
     <h4
       className={cn(
         "text-black font-bold tracking-wide mt-4 flex justify-center items-center text-lg leading-6",
-       
         className
       )}
-      style={{
-        fontFamily: '"Garamond", serif',
-        textShadow: "0 1px 2px rgba(0, 0, 0, 0.2)", // Sombra suave
-      }}
     >
       {children}
     </h4>
@@ -120,10 +115,6 @@ export const CardDescription = ({
         "group-hover:text-opacity-90", // Ligero cambio de opacidad en hover
         className
       )}
-      style={{
-        fontFamily: '"Alilata", serif',
-        textShadow: "0 1px 1px rgba(0, 0, 0, 0.1)", // Sombra sutil
-      }}
     >
       {children}
     </p>
