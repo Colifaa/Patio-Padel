@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTwitter, FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -26,7 +26,7 @@ const Footer = () => {
         </a>
         <a
           className="inline-block "
-          href="https://twitter.com/Jorgemathez14"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -62,7 +62,7 @@ const Footer = () => {
           }
         }
       `}</style>
-      
+
     </footer>
   );
 };
