@@ -62,6 +62,7 @@ const Footer = () => {
           }
         }
       `}</style>
+      
     </footer>
   );
 };
