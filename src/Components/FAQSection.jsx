@@ -10,7 +10,6 @@ import {
   Text,
   Container,
   Box,
-  Heading,
 } from '@chakra-ui/react'
 
 import { ChevronDownIcon } from '@chakra-ui/icons'
