@@ -15,7 +15,6 @@ function about() {
       <FeaturesSectionDemo/>
       <AnimatedTestimonialsDemo/>
       <Footer />
-    
     </div>
   )
 }

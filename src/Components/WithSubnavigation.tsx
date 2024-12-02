@@ -19,7 +19,7 @@ export default function WithSubnavigation() {
   return (
     <Box position="relative">
       <Flex
-        bg="#203C4C"
+        bg="#333333"
         color="white"
         minH="80px"
         py={{ base: 2 }}
@@ -89,7 +89,7 @@ const DesktopNav = () => {
 
 const MobileNav = () => {
   return (
-    <Stack bg="#203C4C" p={4} display={{ md: 'none' }}>
+    <Stack bg="#333333" p={4} display={{ md: 'none' }}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}

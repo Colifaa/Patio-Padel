@@ -1,6 +1,6 @@
 import React from "react";
 import { BackgroundBeamsWithCollision } from "../Components/ui/BackgroundBeamsWithCollision";
-import ButtonReserva from "./Buttons/ButtonReserva";
+
 
 export function BackgroundBeamsWithCollisionDemo() {
   return (
@@ -12,7 +12,7 @@ export function BackgroundBeamsWithCollisionDemo() {
           alt="Logo"
           className="max-w-full max-h-full object-contain"
         />
-        <ButtonReserva />
+ 
 
       </div>
     </BackgroundBeamsWithCollision>

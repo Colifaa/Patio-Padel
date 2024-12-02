@@ -1,52 +1,45 @@
+import { TextGenerateEffectDemo } from "./TextGenerateEffectDemo";
+
 export default function WhyChooseUs() {
+  const handleRedirect = () => {
+    window.open("https://atcsports.io/venues/patio-padel-lima", "_blank"); // Abre el enlace en una nueva pestaña
+  };
+
   return (
-<div className="bg-[#D2E9E9] mt-7 p-8 text-center max-w-6xl mx-auto rounded-lg shadow-lg">
-      <h2 className="text-3xl font-bold text-black mb-6">¿Por qué elegirnos?</h2>
-      <div className="flex flex-col md:flex-row justify-center items-start gap-8">
-        <div className="max-w-md space-y-4">
-          <div className="w-full h-48 overflow-hidden">
-            <img
-              src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource112/v4/1b/35/67/1b356794-8067-0afd-0dc8-8b1eb4b8ce68/12b81a4a-44c5-477e-9a47-4ff04eb665d4_6_U002c7_2_HOR.jpg/643x0w.jpg"
-              alt="Reservas Simplificadas"
-              className="w-full h-full object-cover rounded-md"
-            />
-          </div>
-          <h3 className="text-lg text-black font-semibold">Reservas simplificadas</h3>
-          <ul className="text-black space-y-2 text-left">
-            <li className="flex items-start">
-              <span className="text-green-500 mr-2">✓</span>
-              Gestiona canchas de pádel de manera fácil, rápida y gratuita.
-            </li>
-            <li className="flex items-start">
-              <span className="text-green-500 mr-2">✓</span>
-              Ten acceso a toda la información de tus reservas y partidos en cualquier momento.
-            </li>
-            <li className="flex items-start">
-              <span className="text-green-500 mr-2">✓</span>
-              Disfruta de un sistema intuitivo para organizar tus partidos en segundos.
-            </li>
-          </ul>
+    <div className="bg-[#A7C5D6] mt-7 px-4 py-8 sm:px-6 sm:py-10 lg:px-20 lg:py-24  max-w-full lg:max-w-full mx-auto rounded-lg shadow-lg">
+      <div className="flex flex-col items-start">
+        <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-black mb-4 text-left">
+          El Primer club de pádel de punta hermosa
+        </h2>
+        <div className="text-2xl sm:text-lg text-black font-semibold mb-6 text-left">
+          <TextGenerateEffectDemo />
         </div>
-        <div className="max-w-md space-y-4">
-          <div className="w-full h-48 overflow-hidden">
-            <img
-              src="https://thumbs.dreamstime.com/b/padel-court-tennis-evening-light-ai-generated-content-design-background-instagram-facebook-wall-painting-backgrounds-325690642.jpg"
-              alt="Seguridad Garantizada"
-              className="w-full h-full object-cover rounded-md"
-            />
-          </div>
-          <h3 className="text-lg  text-black font-semibold">Seguro y accesible</h3>
-          <ul className="text-black space-y-2 text-left">
-            <li className="flex items-start">
-              <span className="text-green-500  mr-2">✓</span>
-              Sin costos adicionales para la comunidad propietaria de la instalación.
-            </li>
-            <li className="flex items-start">
-              <span className="text-green-500 mr-2">✓</span>
-              Acceso exclusivo para usuarios autorizados, garantizando tu seguridad.
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div className="flex justify-start">
+      <button
+  onClick={handleRedirect}
+  className="relative inline-flex h-12 active:scale-95 transition-transform overflow-hidden rounded-lg p-[1px] focus:outline-none"
+>
+  <span
+    className="absolute inset-[-1000%] animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#555555_0%,#666666_50%,#333333_100%)]"
+  ></span>
+  <span
+    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-[#333333] px-6 text-sm font-medium text-white backdrop-blur-[10px] gap-2"
+  >
+    Reservar ahora
+    <svg
+      stroke="currentColor"
+      fill="currentColor"
+      strokeWidth="0"
+      viewBox="0 0 448 512"
+      height="1em"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M429.6 92.1c4.9-11.9 2.1-25.6-7-34.7s-22.8-11.9-34.7-7l-352 144c-14.2 5.8-22.2 20.8-19.3 35.8s16.1 25.8 31.4 25.8H224V432c0 15.3 10.8 28.4 25.8 31.4s30-5.1 35.8-19.3l144-352z"></path>
+    </svg>
+  </span>
+</button>
       </div>
     </div>
   );

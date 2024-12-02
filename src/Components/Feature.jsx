@@ -13,7 +13,7 @@ function Feature() {
     >
       <Box
         shadow="xl"
-        bg="#D2E9E9"
+        bg="#A7C5D6"
         color="black"
         px={8}
         py={10} // Reducimos el padding en el eje vertical

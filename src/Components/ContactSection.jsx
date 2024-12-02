@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faComments, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 const ContactSection = () => {
   return (
-    <section className="relative bg-[#D2E9E9] dark:bg-gray-900">
+    <section className="relative bg-[#A7C5D6] dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
         <div>
           <p className="font-medium text-orange-500 dark:text-orange-400">Contacto</p>
