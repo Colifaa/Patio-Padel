@@ -22,18 +22,8 @@ export default function FAQSection() {
   const hoverColor = useColorModeValue('#365867', '#1b2d38')
 
   return (
-    <>
-      {/* Fuentes definidas */}
-      <Box>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Alilata:wght@400&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Garamond&display=swap"
-          rel="stylesheet"
-        />
-      </Box>
+  
+ 
 
       <Flex
         minH={'50vh'}
@@ -44,21 +34,24 @@ export default function FAQSection() {
         px={4}
       >
         <Container maxW="3xl">
-          {/* Título y subtítulo */}
-          <Box textAlign="center" mb={8}>
-            <Heading
-              as="h2"
-              size="xl"
-              fontFamily="Garamond, serif" // Fuente Garamond para títulos
-              color={accentColor}
-              mb={4}
-              
-            >
-              Preguntas Frecuentes
-            </Heading>
+       
+
+          {/* Acordeón con las preguntas y respuestas */}
+          <Accordion
+            allowMultiple
+            width="100%"
+            bg={baseColor}
+            rounded="lg"
+            shadow="md"
+            p={4}
+          >
+               {/* Título y subtítulo */}
+          <Box textAlign="center" mb={8} bgColor="#D2E9E9">
+          <h1 className="text-[1.5em] sm:text-[1.25em] md:text-[1.75em] lg:text-[2em] font-bold ">
+          Preguntas Frecuentes
+          </h1>
             <Text
               color={accentColor}
-              fontFamily="Alilata, serif" // Fuente Alilata para el texto
               fontWeight="semibold"
   
             >
@@ -66,17 +59,6 @@ export default function FAQSection() {
               en Patio Padel.
             </Text>
           </Box>
-
-          {/* Acordeón con las preguntas y respuestas */}
-          <Accordion
-            allowMultiple
-            width="100%"
-            fontFamily="Garamond, serif" // Fuente Garamond para el acordeón
-            bg={baseColor}
-            rounded="lg"
-            shadow="md"
-            p={4}
-          >
             {/* Pregunta 1 */}
             <AccordionItem>
               {({ isExpanded }) => (
@@ -200,6 +182,6 @@ export default function FAQSection() {
           </Accordion>
         </Container>
       </Flex>
-    </>
+ 
   )
 }

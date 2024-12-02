@@ -40,7 +40,7 @@ export const projects = [
       "Ofrecemos asesoría personalizada para organizar tus partidos, torneos o elegir las mejores clases de pádel.",
   },
   {
-    title: "Equipamiento de Pádel",
+    title: "Equipamiento",
     icon: "🏓",
     description:
       "Ofrecemos alquiler y venta de equipamiento de pádel, incluyendo paletas, pelotas, y más.",

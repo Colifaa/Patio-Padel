@@ -4,9 +4,8 @@ import React from 'react'
 function Feature() {
   return (
     <Flex
-    
       p={10} // Reducimos el padding general para pantallas pequeñas
-      color="red.100"
+      color="black"
       w="full"
       justifyContent="center"
       alignItems="center"
@@ -14,8 +13,8 @@ function Feature() {
     >
       <Box
         shadow="xl"
-        bg="transparent"
-        color="red"
+        bg="#D2E9E9"
+        color="black"
         px={8}
         py={10} // Reducimos el padding en el eje vertical
         mx="auto"
@@ -39,7 +38,7 @@ function Feature() {
         >
           <Box>
             <chakra.h2
-            mt="20"
+              mt="20"
               mb={5}
               fontSize={{
                 base: "xl", // Tamaño de fuente más pequeño en pantallas pequeñas
@@ -51,7 +50,7 @@ function Feature() {
                 base: "center",
                 md: "left",
               }}
-              color="white"
+              color="black"
               lineHeight={{
                 base: "shorter",
                 md: "shorter",
@@ -66,16 +65,16 @@ function Feature() {
                 base: "center",
                 sm: "left",
               }}
-              color="gray.200"
+              color="black"
+                 fontWeight="extrabold"
               fontSize={{
                 base: "sm", // Tamaño de fuente ajustado para pantallas pequeñas
                 md: "lg",
               }}
             >
-            Nos apasiona ofrecer un lugar único donde jugadores de todos los niveles puedan disfrutar del pádel en su máxima expresión. 
-            Contamos con instalaciones de calidad, un ambiente amigable y un equipo comprometido con brindarte la mejor experiencia.
+              Nos apasiona ofrecer un lugar único donde jugadores de todos los niveles puedan disfrutar del pádel en su máxima expresión. 
+              Contamos con instalaciones de calidad, un ambiente amigable y un equipo comprometido con brindarte la mejor experiencia.
             </chakra.p>
-         
           </Box>
           <Box
             w="full"
@@ -128,13 +127,15 @@ function Feature() {
                 base: "center",
                 md: "left",
               }}
-              color="white"
+              color="black"
+                textShadow="2px 0 currentcolor"
               lineHeight={{
                 base: "shorter",
                 md: "shorter",
+                
               }}
             >
-             Tu experiencia en el juego, a tu manera
+              Tu experiencia en el juego, a tu manera
             </chakra.h2>
             <chakra.p
               mb={5}
@@ -142,16 +143,16 @@ function Feature() {
                 base: "center",
                 sm: "left",
               }}
-              color="gray.200"
+              color="black"
+              fontWeight="extrabold"
               fontSize={{
                 base: "sm",
                 md: "lg",
               }}
             >
-             Creemos que cada jugador tiene su propio estilo. Por eso, ofrecemos un espacio flexible y adaptado a tus necesidades, 
-             donde podrás disfrutar del pádel a tu propio ritmo, con acceso a todas nuestras canchas y servicios de la manera que prefieras.
+              Creemos que cada jugador tiene su propio estilo. Por eso, ofrecemos un espacio flexible y adaptado a tus necesidades, 
+              donde podrás disfrutar del pádel a tu propio ritmo, con acceso a todas nuestras canchas y servicios de la manera que prefieras.
             </chakra.p>
-       
           </Box>
           <Box
             w="full"
