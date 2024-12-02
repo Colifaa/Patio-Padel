@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react';
+
 import React from 'react';
 import { TextGenerateEffectDemo } from '../TextGenerateEffectDemo';
 
@@ -9,22 +9,13 @@ function ButtonReserva() {
 
   return (
     <>
-      <Box>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Alilata:wght@400&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Garamond&display=swap"
-          rel="stylesheet"
-        />
-      </Box>
+   
 
       <div
-        className="h-auto w-full max-w-[28em] border-2 border-[rgba(32,60,76,0.5)] rounded-[1.5em] bg-gradient-to-br from-[#203C4C] to-[rgba(32,60,76,0.1)] text-black font-nunito p-6 flex justify-center items-center flex-col gap-4 backdrop-blur-[12px] text-center sm:p-4 sm:gap-3"
+        className="h-auto w-full max-w-[28em] border-2 border-[rgba(32,60,76,0.5)] rounded-[1.5em] bg-gradient-to-br from-[#D2E9E9] to-[rgba(54,164,228,0.1)] text-black font-semibold p-6 flex justify-center items-center flex-col gap-4 backdrop-blur-[12px] text-center sm:p-4 sm:gap-3"
       >
         <div>
-          <h1 className="text-[1.5em] sm:text-[1.25em] md:text-[1.75em] lg:text-[2em] font-bold font-[Garamond]">
+          <h1 className="text-[1.5em] sm:text-[1.25em] md:text-[1.75em] lg:text-[2em] font-bold ">
             Bienvenidos
           </h1>
           <TextGenerateEffectDemo />

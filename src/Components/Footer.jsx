@@ -18,7 +18,7 @@ const Footer = () => {
         </a>
         <a
           className="inline-block "
-          href="https://wa.me/+51919499957" // Reemplaza con tu número de WhatsApp
+          href="https://wa.me/+51919499957" 
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -37,9 +37,9 @@ const Footer = () => {
 
       <div className="w-full h-[2px] bg-gray-600 mt-2"></div>
       <div className="w-full h-[2px] bg-gray-600 mt-80"></div>
-      <div className="flex flex-col md:flex-row items-center justify-between mt-4">
-        <p>&copy; Copyright Todos los derechos reservados {year}</p>
-        <p>
+      <div className="flex flex-col md:flex-row items-center justify-between mt-4 font-bold">
+        <p className=" text-black ">&copy; Copyright Todos los derechos reservados {year}</p>
+        <p className="text-black  font-bold">
           Developed by{" "}
           <a
             href="https://www.linkedin.com/in/jorge-mathez/"

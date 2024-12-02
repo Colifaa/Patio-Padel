@@ -4,35 +4,35 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "Las canchas de Patio Pádel son increíbles. La superficie es perfecta para jugar y las instalaciones son muy cómodas.",
+        "Las canchas son increíbles, con una superficie ideal para jugar y unas instalaciones súper cómodas. ¡Me encanta venir aquí!",
       name: "Laura Fernández",
       designation: "Jugadora amateur",
       src: "/Laura.png",
     },
     {
       quote:
-        "Me encanta jugar en Patio Pádel. Siempre está limpio y bien organizado. ¡Es mi lugar favorito para el pádel!",
+        "Siempre está limpio y bien organizado. Es el lugar perfecto para disfrutar del pádel con amigos.",
       name: "Juan Pérez",
       designation: "Jugador recreativo",
       src: "/Deportista2.png",
     },
     {
       quote:
-        "Las mejores canchas de pádel en la ciudad. Además, tienen un ambiente genial para disfrutar con amigos.",
+        "Sin duda, las mejores canchas de la ciudad. Además, el ambiente es genial para pasar un buen rato.",
       name: "Ana López",
       designation: "Fanática del deporte",
       src: "/Ana.png",
     },
     {
       quote:
-        "El ambiente es espectacular, y el personal siempre está dispuesto a ayudar. ¡Recomiendo Patio Pádel a todos!",
+        "El ambiente es espectacular, y el personal siempre está dispuesto a ayudar. Es un lugar que recomiendo a todos.",
       name: "Carlos Medina",
       designation: "Jugador profesional",
       src: "/Deportista.png",
     },
     {
       quote:
-        "Excelente lugar para jugar al pádel. Las instalaciones son de primera categoría y el servicio es impecable.",
+        "Un sitio excelente para jugar al pádel. Las instalaciones son de primera y el servicio es impecable.",
       name: "Sofía Martínez",
       designation: "Amante del deporte",
       src: "/Mari.png",
@@ -40,10 +40,8 @@ export function AnimatedTestimonialsDemo() {
   ];
 
   return (
-    <div>
-      <h2 className="text-2xl font-bold text-center my-6">
-        ¿Qué opinan nuestros clientes?
-      </h2>
+    <div className=" bg-[#D2E9E9] relative">
+
       <AnimatedTestimonials testimonials={testimonials} />
     </div>
   );
