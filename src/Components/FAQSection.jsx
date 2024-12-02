@@ -16,7 +16,7 @@ import { ChevronDownIcon } from '@chakra-ui/icons'
 
 export default function FAQSection() {
   const textColor = useColorModeValue('black', 'black');
-  const baseColor = '#D2E9E9'
+  const baseColor = '#A7C5D6'
   const accentColor = 'black'
   const hoverColor = useColorModeValue('#365867', '#1b2d38')
 
@@ -45,7 +45,7 @@ export default function FAQSection() {
             p={4}
           >
                {/* Título y subtítulo */}
-          <Box textAlign="center" mb={8} bgColor="#D2E9E9">
+          <Box  textAlign="center" mb={8} bgColor="#A7C5D6">
           <h1 className="text-[1.5em] sm:text-[1.25em] md:text-[1.75em] lg:text-[2em] font-bold ">
           Preguntas Frecuentes
           </h1>
@@ -59,7 +59,8 @@ export default function FAQSection() {
             </Text>
           </Box>
             {/* Pregunta 1 */}
-            <AccordionItem>
+            <AccordionItem   borderTop="2px solid #333333" 
+  borderBottom="2px solid #333333" >
               {({ isExpanded }) => (
                 <>
                   <AccordionButton
@@ -89,7 +90,7 @@ export default function FAQSection() {
             </AccordionItem>
 
             {/* Pregunta 2 */}
-            <AccordionItem>
+            <AccordionItem   borderBottom="2px solid #333333" >
               {({ isExpanded }) => (
                 <>
                   <AccordionButton
@@ -120,7 +121,7 @@ export default function FAQSection() {
             </AccordionItem>
 
             {/* Pregunta 3 */}
-            <AccordionItem>
+            <AccordionItem   borderBottom="2px solid #333333">
               {({ isExpanded }) => (
                 <>
                   <AccordionButton
@@ -150,7 +151,7 @@ export default function FAQSection() {
             </AccordionItem>
 
             {/* Pregunta 4 */}
-            <AccordionItem>
+            <AccordionItem   borderBottom="2px solid #333333" >
               {({ isExpanded }) => (
                 <>
                   <AccordionButton

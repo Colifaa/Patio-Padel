@@ -40,7 +40,7 @@ export function AnimatedTestimonialsDemo() {
   ];
 
   return (
-    <div className=" bg-[#D2E9E9] relative">
+    <div className=" bg-[#A7C5D6] relative">
 
       <AnimatedTestimonials testimonials={testimonials} />
     </div>

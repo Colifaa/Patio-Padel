@@ -1,12 +1,14 @@
 import React from "react";
-import { FaTwitter, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-[#203C4C] text-center p-8 md:p-16 relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url("/Prueba.png")' }}>
-      {/* Contenedor de los íconos de redes sociales */}
+  <footer
+  className="w-full bg-[#A7C5D6] text-center p-8 md:p-6 relative bg-cover lg:bg-contain bg-center bg-no-repeat"
+  style={{ backgroundImage: 'url("/Prueba.png")' }}
+>
       <div className="flex justify-center items-center space-x-4 mb-6 md:mr-16">
         <a
           className="inline-block"
@@ -24,14 +26,7 @@ const Footer = () => {
         >
           <FaWhatsapp className="text-2xl text-green-500" />
         </a>
-        <a
-          className="inline-block "
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaTwitter className="text-2xl text-blue-600" />
-        </a>
+    
         {/* Puedes agregar más íconos aquí */}
       </div>
 

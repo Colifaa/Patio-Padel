@@ -18,8 +18,8 @@ const AboutCompany = () => {
   };
 
   return (
-    <section className="bg-[#D2E9E9] p-8 rounded-lg shadow-lg mt-10">
-      <h2 className="text-3xl font-semibold text-center text-black mb-4">
+    <section className="bg-[#A7C5D6] p-8 rounded-lg shadow-lg mt-10">
+      <h2 className="text-3xl font-semibold text-center text-black mb-4 ">
         Sobre Nosotros
       </h2>
       <p className="text-[#020407] text-center mb-6 font-bold">
@@ -29,7 +29,7 @@ const AboutCompany = () => {
 
       <div className="text-center mt-6">
         <button
-          className="bg-[#2e5d82] text-black px-4 py-2 rounded hover:bg-[#254c6b] transition duration-200"
+          className="bg-[#F6F6F6] text-black px-4 py-2 rounded hover:bg-[#333333] transition duration-200"
           onClick={handleAboutClick}
           aria-label="Más sobre Patio Padel"
         >
@@ -45,7 +45,7 @@ const AboutCompany = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex items-center p-4 bg-[#355d7d] rounded-lg shadow transition-transform duration-300 transform hover:scale-105"
+            className="flex items-center p-4 bg-[#F6F6F6] rounded-lg shadow transition-transform duration-300 transform hover:scale-105"
           >
             <FontAwesomeIcon
               icon={feature.icon}
