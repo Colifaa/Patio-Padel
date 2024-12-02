@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { TextGenerateEffectDemo } from '../TextGenerateEffectDemo';
+
 
 function ButtonReserva() {
   const handleRedirect = () => {
