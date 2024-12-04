@@ -62,13 +62,13 @@ const ParticlesBg = (props) => {
           value: particleCount,
         },
         color: {
-          value: "#528caa",
+          value: "#4e4b4c",
         },
         links: {
           enable: true,
           distance: 200,
           color: {
-            value: "#528caa",
+            value: "#4e4b4c",
           },
         },
         move: {

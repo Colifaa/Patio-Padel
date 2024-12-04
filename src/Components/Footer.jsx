@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
   <footer
-  className="w-full bg-[#A7C5D6] text-center p-8 md:p-6 relative bg-cover lg:bg-contain bg-center bg-no-repeat"
+  className="w-full bg-[#4e4b4c] text-center p-8 md:p-6 relative bg-cover lg:bg-contain bg-center bg-no-repeat"
   style={{ backgroundImage: 'url("/Prueba.png")' }}
 >
       <div className="flex justify-center items-center space-x-4 mb-6 md:mr-16">
@@ -48,12 +48,15 @@ const Footer = () => {
       </div>
 
       {/* Tailwind CSS para la imagen de fondo responsiva */}
-      <style jsx>{`
-        @media (max-width: 768px) {
+     <style jsx>{`
+        footer {
+          background-size: contain; /* Mantén el diseño original para móviles y tablets */
+          background-position: center;
+        }
+
+        @media (min-width: 1024px) {
           footer {
-            background-size: contain;  /* Cambiar a contain en móviles */
-            background-position: center center;
-            min-height: 300px;  /* Ajustar altura para pantallas pequeñas */
+            background-size: 40%; /* Reduce el tamaño de la imagen en pantallas grandes */
           }
         }
       `}</style>

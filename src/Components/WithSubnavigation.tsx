@@ -19,7 +19,7 @@ export default function WithSubnavigation() {
   return (
     <Box position="relative">
       <Flex
-        bg="#333333"
+        bg="#4e4b4c"
         color="white"
         minH="80px"
         py={{ base: 2 }}
