@@ -25,6 +25,7 @@ export default function FAQSection() {
  
 
       <Flex
+      position="relative"
         minH={'50vh'}
         align={'center'}
         justify={'center'}

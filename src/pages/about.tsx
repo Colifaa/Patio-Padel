@@ -1,7 +1,7 @@
-import { AnimatedTestimonialsDemo } from '@/Components/AnimatedTestimonialsDemo'
 import { FeaturesSectionDemo} from '@/Components/FeaturesSectionDemo'
 import { ImagesSliderDemo } from '@/Components/ImagesSliderDemo'
 
+import  FAQSection  from "../Components/FAQSection"
 
 import Feature  from '@/Components/Feature'
 import React from 'react'
@@ -13,7 +13,7 @@ function about() {
       <ImagesSliderDemo/>
       <Feature/>
       <FeaturesSectionDemo/>
-      <AnimatedTestimonialsDemo/>
+      <FAQSection/>
       <Footer />
     </div>
   )

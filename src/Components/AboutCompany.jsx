@@ -29,7 +29,7 @@ const AboutCompany = () => {
 
       <div className="text-center mt-6">
         <button
-          className="bg-[#F6F6F6] text-black px-4 py-2 rounded hover:bg-[#333333] transition duration-200"
+          className="bg-[#F6F6F6] text-black px-4 py-2 rounded hover:bg-[#4e4b4c] transition duration-200"
           onClick={handleAboutClick}
           aria-label="Más sobre Patio Padel"
         >
@@ -45,7 +45,7 @@ const AboutCompany = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex items-center p-4 bg-[#F6F6F6] rounded-lg shadow transition-transform duration-300 transform hover:scale-105"
+            className="flex items-center p-4 bg-[#F6F6F6]  hover:bg-[#4e4b4c] rounded-lg shadow transition-transform duration-300 transform hover:scale-105"
           >
             <FontAwesomeIcon
               icon={feature.icon}

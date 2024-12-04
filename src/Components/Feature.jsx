@@ -7,6 +7,7 @@ function Feature() {
       p={10} // Reducimos el padding general para pantallas pequeñas
       color="black"
       w="full"
+      h="full"
       justifyContent="center"
       alignItems="center"
       pos="relative"

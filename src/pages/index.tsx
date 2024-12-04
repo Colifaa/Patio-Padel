@@ -1,7 +1,6 @@
 import { CardHoverEffectDemo } from "../Components/CardHoverEffectDemo";
 import { BackgroundBeamsWithCollisionDemo } from "../Components/BackgroundBeamsWithCollisionDemo";
 import AboutCompany from "../Components/AboutCompany";
-import FAQSection from "@/Components/FAQSection";
 import Footer from "@/Components/Footer";
 import { InfiniteMovingCardsDemo } from "../Components/InfiniteMovingCardsDemo";
 import AboutUs from "@/Components/AboutUs";
@@ -14,7 +13,6 @@ export default function Home() {
       <AboutCompany />
       <CardHoverEffectDemo />
       <InfiniteMovingCardsDemo/>
-      <FAQSection/>
       <Footer />
     </div>
 
