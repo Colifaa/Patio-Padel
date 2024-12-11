@@ -17,7 +17,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <Box bg="#4E4B4C" color="white" py={5} px={6}>
+    <Box pos="relative" bg="#4E4B4C" color="white" py={5} px={6}>
       <Flex
         direction={{ base: "column", md: "row" }}
         align="center"
