@@ -28,7 +28,7 @@ const Footer = () => {
         {/* Logo e Información de Contacto */}
         <VStack align={{ base: "center", md: "flex-start" }} spacing={3} mb={{ base: 4, md: 0 }}>
           <Image
-            src="/prueba.png"
+            src="/Prueba.png"
             alt="Logo"
             maxWidth={{ base: "150px", md: "180px" , lg:"220px"}}
             objectFit="contain"
