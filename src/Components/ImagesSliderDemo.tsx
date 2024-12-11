@@ -42,7 +42,7 @@ export function ImagesSliderDemo() {
       </motion.div>
       <button
   onClick={handleRedirect} // Añadir la funcionalidad al clic
-  className="z-50 relative inline-flex h-16 w-auto active:scale-95 transition-transform overflow-hidden rounded-lg p-[2px] focus:outline-none mt-80"
+  className="z-50 relative inline-flex h-12 w-auto active:scale-95 transition-transform overflow-hidden rounded-lg p-[2px] focus:outline-none mt-80"
 >
   <span
     className="absolute inset-[-1000%] animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#555555_0%,#666666_50%,#333333_100%)]"
