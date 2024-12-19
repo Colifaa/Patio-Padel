@@ -20,7 +20,7 @@ export function FeaturesSectionDemo() {
       icon: <IconTerminal2 />,
     },
     {
-      title: "Ubicación estratégica",
+      title: "Ubicación Estratégica",
       description: "Estamos ubicados en la zona exclusiva de Playa Blanca.",
       icon: <IconRouteAltLeft />,
     },
@@ -33,6 +33,26 @@ export function FeaturesSectionDemo() {
       title: "Eventos Corporativos",
       description: "Organiza tu evento en nuestras instalaciones.",
       icon: <IconUsersGroup />,
+    },
+    {
+      title: "Ajustes Rápidos",
+      description: "Personaliza la experiencia de juego a tu gusto.",
+      icon: <IconAdjustmentsBolt />,
+    },
+    {
+      title: "Nube de Datos",
+      description: "Accede a tus datos en cualquier momento y lugar.",
+      icon: <IconCloud />,
+    },
+    {
+      title: "Experiencia Suave",
+      description: "Disfruta de una experiencia de juego sin interrupciones.",
+      icon: <IconEaseInOut />,
+    },
+    {
+      title: "Transacciones Seguras",
+      description: "Realiza pagos de forma rápida y segura.",
+      icon: <IconCurrencyDollar />,
     },
     {
       title: "Comunidad",
