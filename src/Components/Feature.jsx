@@ -58,7 +58,7 @@ function Feature() {
               }}
               textShadow="2px 0 currentcolor"
             >
-              Un espacio único para tu mejor rendimiento
+              Un espacio único en el corazón de Punta Hermosa
             </chakra.h2>
             <chakra.p
               mb={5}

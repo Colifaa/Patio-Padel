@@ -18,15 +18,15 @@ export default function WhyChooseUs() {
       <div className="flex justify-start">
       <button
   onClick={handleRedirect} // Añadir la funcionalidad al clic
-  className="relative inline-flex h-12 active:scale-95 transition-transform overflow-hidden rounded-lg p-[1px] focus:outline-none"
+  className="relative inline-flex h-12 active:scale-95 transition-transform overflow-hidden rounded-lg p-[2px] focus:outline-none"
 >
   <span
-    className="absolute inset-[-1000%] animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#555555_0%,#666666_50%,#333333_100%)]"
+   className="absolute inset-[-1000%] animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#555555_0%,#666666_50%,#333333_100%)]"
   ></span>
   <span
     className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-[#333333] px-6 text-lg font-medium text-white backdrop-blur-[10px] gap-2"
   >
-    Reservar ahora
+    Reserva ahora
     <svg
       stroke="currentColor"
       fill="currentColor"

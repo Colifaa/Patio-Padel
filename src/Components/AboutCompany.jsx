@@ -7,10 +7,10 @@ const AboutCompany = () => {
   const router = useRouter();
 
   const features = [
-    { icon: faCalendarCheck, text: 'Contamos con 3 canchas panorámicas outdoor de alta calidad.' },
-    { icon: faClock, text: 'Participa en nuestros torneos o organiza tu propio evento en nuestras instalaciones.' },
-    { icon: faMapMarkerAlt, text: 'Aprende a jugar o mejora tus habilidades con clases impartidas por nuestro entrenador.' },
-    { icon: faUsers, text: 'Entérate de promociones especiales en nuestras redes.' },
+    { icon: faCalendarCheck, text: 'Reserva fácil y rápida de canchas.' },
+    { icon: faClock, text: 'Horarios de 90 minutos, de lunes a domingo durante todo el año.' },
+    { icon: faMapMarkerAlt, text: 'Ubicación accesible y estacionamiento.' },
+    { icon: faUsers, text: 'Ambiente ideal para jugadores de todos los niveles.' },
   ];
 
   const handleAboutClick = () => {
