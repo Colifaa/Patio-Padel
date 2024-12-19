@@ -111,7 +111,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-black tracking-wide leading-6 text-sm",
+        "mt-4 text-black tracking-wide leading-6 text-sm font-semibold",
         "group-hover:text-opacity-90", // Ligero cambio de opacidad en hover
         className
       )}
@@ -132,7 +132,7 @@ export const CardIcon = ({
   return (
     <div
       className={cn(
-        "flex justify-center items-center text-5xl text-black mb-4",
+        "flex justify-center items-center text-5xl text-black mb-4 text-s",
         "group-hover:scale-110 transition-transform duration-150", // Efecto de zoom en hover
         className
       )}

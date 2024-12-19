@@ -7,10 +7,10 @@ const AboutCompany = () => {
   const router = useRouter();
 
   const features = [
-    { icon: faCalendarCheck, text: 'Reserva fácil y rápida de canchas.' },
-    { icon: faClock, text: 'Horarios flexibles para adaptarse a tu agenda.' },
-    { icon: faMapMarkerAlt, text: 'Ubicación accesible y con estacionamiento.' },
-    { icon: faUsers, text: 'Ambiente ideal para jugadores de todos los niveles.' },
+    { icon: faCalendarCheck, text: 'Contamos con 3 canchas panorámicas outdoor de alta calidad.' },
+    { icon: faClock, text: 'Participa en nuestros torneos o organiza tu propio evento en nuestras instalaciones.' },
+    { icon: faMapMarkerAlt, text: 'Aprende a jugar o mejora tus habilidades con clases impartidas por nuestro entrenador.' },
+    { icon: faUsers, text: 'Entérate de promociones especiales en nuestras redes.' },
   ];
 
   const handleAboutClick = () => {
@@ -19,12 +19,11 @@ const AboutCompany = () => {
 
   return (
     <section className="bg-[#A7C5D6] p-8 rounded-lg shadow-lg mt-10">
-      <h2 className="text-3xl font-semibold text-center text-black mb-4 ">
+      <h2 className="text-3xl font-semibold text-center text-black mb-4">
         Sobre Nosotros
       </h2>
       <p className="text-[#020407] text-center mb-6 font-bold">
-        En Patio Padel, ofrecemos una experiencia de juego única, con canchas de primera calidad
-        y un sistema de reservas pensado para que disfrutes del deporte sin complicaciones.
+        En Patio Padel, ofrecemos una experiencia única, con canchas de primera calidad donde podrás disfrutar del mejor ambiente después de tu partido.
       </p>
 
       <div className="text-center mt-6">
@@ -45,7 +44,7 @@ const AboutCompany = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex items-center p-4 bg-[#F6F6F6]  hover:bg-[#4e4b4c] rounded-lg shadow transition-transform duration-300 transform hover:scale-105"
+            className="flex items-center p-4 bg-[#F6F6F6] hover:bg-[#4e4b4c] rounded-lg shadow transition-transform duration-300 transform hover:scale-105"
           >
             <FontAwesomeIcon
               icon={feature.icon}

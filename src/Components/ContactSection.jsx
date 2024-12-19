@@ -1,15 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faComments, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+
 const ContactSection = () => {
   return (
     <section className="relative bg-[#A7C5D6] dark:bg-gray-900">
       <div className="container px-6 py-12 mx-auto">
         <div>
-          <p className="font-medium text-orange-500 dark:text-orange-400">Contacto</p>
-          <h1 className="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl dark:text-white">
-            Estamos aquí para ayudarte
-          </h1>
-          <p className="mt-3 text-gray-500 dark:text-gray-400">
+          <p className="font-bold dark:bg-gray-800 dark:text-[#726659]">Contacto</p>
+      
+          <p className="mt-3 font-semibold text-gray-500 dark:text-gray-400">
             No dudes en comunicarte con nosotros. Estamos a tu disposición para cualquier consulta o sugerencia.
           </p>
         </div>
@@ -18,42 +17,33 @@ const ContactSection = () => {
           {/* Información de contacto */}
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-1">
             <div>
-              <span className="inline-block p-3 text-orange-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+              <span className="inline-block p-3 text-[#D8C3A5] rounded-full bg-blue-100/80 dark:bg-gray-800">
                 <FontAwesomeIcon icon={faEnvelope} className="w-5 h-5" />
               </span>
-              <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Correo electrónico</h2>
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                Escríbenos, estaremos encantados de atenderte.
-              </p>
-              <p className="mt-2 text-sm text-orange-500 dark:text-orange-400">
+              <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">Correo electrónico</h2>
+            
+              <p className="mt-2 text-sm  font-semibold text-[#726659] dark:text-[#726659]">
                 info@patiopadel.pe
               </p>
             </div>
 
             <div>
-              <span className="inline-block p-3 text-orange-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+              <span className="inline-block p-3 text-[#D8C3A5] rounded-full bg-blue-100/80 dark:bg-gray-800">
                 <FontAwesomeIcon icon={faComments} className="w-5 h-5" />
               </span>
-              <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">
-                WhatsApp
-              </h2>
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                Puedes escribirnos a través de WhatsApp en cualquier momento.
-              </p>
-              <p className="mt-2 text-sm text-orange-500 dark:text-orange-400">
+              <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">WhatsApp</h2>
+
+              <p className="mt-2 text-sm text-[#726659] font-semibold dark:text-[#726659]">
                 +51 9 19499957
               </p>
             </div>
 
             <div>
-              <span className="inline-block p-3 text-orange-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
+              <span className="inline-block p-3 text-[#D8C3A5] rounded-full bg-blue-100/80 dark:bg-gray-800">
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="w-5 h-5" />
               </span>
-              <h2 className="mt-4 text-base font-medium text-gray-800 dark:text-white">Dirección</h2>
-              <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-                Ven a visitarnos en nuestra sede, será un placer recibirte.
-              </p>
-              <p className="mt-2 text-sm text-orange-500 dark:text-orange-400">
+              <h2 className="mt-4 text-base font-bold text-gray-800 dark:text-white">Dirección</h2>
+              <p className="mt-2 text-sm text-[#726659] dark:text-[#726659] font-semibold">
                 Mar Mediterráneo 324, Punta Hermosa
               </p>
             </div>
@@ -81,4 +71,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-

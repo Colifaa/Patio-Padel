@@ -11,38 +11,38 @@ export function CardHoverEffectDemo() {
 export const projects = [
   {
     title: "Alquiler de Canchas",
-    icon: "🎾",
+    icon: "🎾", // Pelota de tenis
     description:
-      "Alquila nuestras canchas de alta calidad para partidos individuales o dobles.",
+      "Contamos con 3 canchas panorámicas outdoor de alta calidad.",
   },
   {
-    title: "Eventos y Torneos",
+    title: "Actividades y Torneos",
     icon: "📅",
     description:
-      "Participa en nuestros torneos o organiza tu propio evento en nuestras instalaciones.",
+      "Participa en nuestros torneos u organiza tu propio evento en nuestras instalaciones.",
   },
   {
     title: "Clases de Pádel",
     icon: "🎓",
     description:
-      "Aprende a jugar o mejora tus habilidades con clases impartidas por profesionales.",
+      "Aprende a jugar o mejora tus habilidades con clases impartidas por nuestro entrenador.",
   },
   {
-    title: "Descuentos",
-    icon: "💸",
+    title: "Zona Lounge",
+    icon: "🍽️",
     description:
-      "Obtén descuentos en las reservas de canchas si eres un usuario frecuente o participas en promociones especiales.",
-  },
-  {
-    title: "Soporte y Asesoría",
-    icon: "🗣️",
-    description:
-      "Ofrecemos asesoría personalizada para organizar tus partidos, torneos o elegir las mejores clases de pádel.",
+      "Disfruta de nuestra zona lounge con área de comidas para una mejor experiencia.",
   },
   {
     title: "Equipamiento",
     icon: "🏓",
     description:
-      "Ofrecemos alquiler y venta de equipamiento de pádel, incluyendo paletas, pelotas, y más.",
+      "Ofrecemos alquiler y venta de equipamiento de pádel, incluyendo palas, pelotas y más.",
+  },
+  {
+    title: "Descuentos",
+    icon: "💸",
+    description:
+      "Entérate de promociones especiales en nuestras redes.",
   },
 ];

@@ -136,7 +136,7 @@ function Feature() {
                 
               }}
             >
-              Tu experiencia en el juego, a tu manera
+              La mejor experiencia de pádel cerca al mar
             </chakra.h2>
             <chakra.p
               mb={5}
@@ -151,8 +151,11 @@ function Feature() {
                 md: "lg",
               }}
             >
-              Creemos que cada jugador tiene su propio estilo. Por eso, ofrecemos un espacio flexible y adaptado a tus necesidades, 
-              donde podrás disfrutar del pádel a tu propio ritmo, con acceso a todas nuestras canchas y servicios de la manera que prefieras.
+             Ofrecemos un espacio flexible con áreas recreativas 
+             donde podrás disfrutar del pádel a tu propio ritmo
+            ,con amigos o en familia, 
+            tanto en temporada de verano o todo el año.
+            Ádemas de crear tu propia comunidad
             </chakra.p>
           </Box>
           <Box

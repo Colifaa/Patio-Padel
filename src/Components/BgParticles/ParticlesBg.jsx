@@ -65,7 +65,7 @@ const ParticlesBg = (props) => {
           value: "#4e4b4c",
         },
         links: {
-          enable: true,
+          enable: false,
           distance: 200,
           color: {
             value: "#4e4b4c",
