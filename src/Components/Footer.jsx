@@ -44,10 +44,10 @@ const Footer = () => {
         {/* Enlaces a Redes Sociales */}
         <HStack spacing={6} mt={{ base: 4, md: 0 }}>
           <Link href="https://www.instagram.com/patiopadelph" isExternal>
-            <Icon as={FaInstagram} boxSize={8} color="pink.400" _hover={{ color: "pink.300" }} />
+          <Icon as={FaInstagram} boxSize={8} color="#D8C3A5" _hover={{ color: "#E1306C" }} />
           </Link>
           <Link href="https://wa.me/+51919499957" isExternal>
-            <Icon as={FaWhatsapp} boxSize={8} color="green.400" _hover={{ color: "green.300" }} />
+          <Icon as={FaWhatsapp} boxSize={8} color="#D8C3A5" _hover={{ color: "#25D366" }} />
           </Link>
         </HStack>
       </Flex>
