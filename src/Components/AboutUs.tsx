@@ -1,4 +1,4 @@
-import { TextGenerateEffectDemo } from "./TextGenerateEffectDemo";
+
 
 export default function WhyChooseUs() {
   const handleRedirect = () => {
@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
           El Primer club de pádel de Punta Hermosa
         </h2>
         <div className="text-2xl sm:text-lg text-black font-semibold mb-6 text-left">
-          <TextGenerateEffectDemo />
+       Asegura tu espacio en nuestras canchas de pádel y disfruta de una experiencia única cerca el mar.
         </div>
       </div>
       <div className="flex justify-start">

@@ -10,7 +10,6 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
-    icon: string; // El ícono es un string con el símbolo o el nombre del ícono
   }[];
   className?: string;
 }) => {
@@ -48,7 +47,6 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardIcon>{item.icon}</CardIcon>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>

@@ -2,8 +2,8 @@ import { cn } from "@/lib/utils";
 import {
   IconHeart,
   IconRouteAltLeft,
-  IconHelp,
-  IconTerminal2,
+  IconTrophy,
+  IconSchool,
   IconUsersGroup,
   IconPaw,
 } from "@tabler/icons-react";
@@ -13,7 +13,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Canchas de Alta Calidad",
       description: "Contamos con 3 canchas panorámicas para brindarte la mejor experiencia en cada partido.",
-      icon: <IconTerminal2 />,
+      icon: <IconTrophy  />,
     },
     {
       title: "Ubicación estratégica",
@@ -23,7 +23,7 @@ export function FeaturesSectionDemo() {
     {
       title: "Academia y Clínicas",
       description: "Contamos con entrenador para sesiones individuales y grupales.",
-      icon: <IconHelp />,
+      icon: <IconSchool  />,
     },
     {
       title: "Eventos Corporativos",

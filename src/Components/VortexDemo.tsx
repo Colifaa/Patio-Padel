@@ -15,7 +15,7 @@ export function VortexDemo() {
           Sobre Nosotros
         </h2>
         <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
-        En patio Padel, ofrecemos un espacio único para disfrutar
+        En Patio Padel, ofrecemos un espacio único para disfrutar
              de este deporte, con canchas de primer nivel
               y un ambiente ideal pensado para todos.
         </p>
