@@ -45,7 +45,7 @@ function Feature() {
                 base: "xl", // Tamaño de fuente más pequeño en pantallas pequeñas
                 md: "4xl",
               }}
-              fontWeight="extrabold"
+              fontWeight="medium"
               letterSpacing="tight"
               textAlign={{
                 base: "center",
@@ -122,7 +122,7 @@ function Feature() {
                 base: "xl",
                 md: "4xl",
               }}
-              fontWeight="extrabold"
+              fontWeight="medium"
               letterSpacing="tight"
               textAlign={{
                 base: "center",

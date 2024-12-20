@@ -9,7 +9,7 @@ export default function WhyChooseUs() {
     <div className="bg-[#A7C5D6] mt-7 px-4 py-8 sm:px-6 sm:py-10 lg:px-20 lg:py-24  max-w-full lg:max-w-full mx-auto rounded-lg shadow-lg">
       <div className="flex flex-col items-start">
         <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-black mb-4 text-left">
-          El Primer club de pádel de punta hermosa
+          El Primer club de pádel de Punta Hermosa
         </h2>
         <div className="text-2xl sm:text-lg text-black font-semibold mb-6 text-left">
           <TextGenerateEffectDemo />
@@ -24,7 +24,7 @@ export default function WhyChooseUs() {
    className="absolute inset-[-1000%] animate-spin bg-[conic-gradient(from_90deg_at_50%_50%,#555555_0%,#666666_50%,#333333_100%)]"
   ></span>
   <span
-    className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg bg-[#333333] px-6 text-lg font-medium text-white backdrop-blur-[10px] gap-2"
+    className="inline-flex h-full w-full cursor-pointer items-center justify-center bg-[#333333] px-6 text-lg font-medium text-white backdrop-blur-[10px] gap-2"
   >
     Reserva ahora
     <svg
