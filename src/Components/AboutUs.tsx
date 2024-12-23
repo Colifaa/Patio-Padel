@@ -11,9 +11,10 @@ export default function WhyChooseUs() {
         <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-black mb-4 text-left">
           El Primer club de pádel de Punta Hermosa
         </h2>
-        <div className="text-2xl sm:text-lg text-black font-semibold mb-6 text-left">
+        <div className="text-[#020407] text-center mb-6 font-bold">  
        Asegura tu espacio en nuestras canchas de pádel y disfruta de una experiencia única cerca el mar.
         </div>
+        
       </div>
       <div className="flex justify-start">
       <button
