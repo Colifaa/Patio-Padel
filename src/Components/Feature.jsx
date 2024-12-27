@@ -40,10 +40,11 @@ function Feature() {
           <Box>
             <chakra.h2
               mt="20"
-              mb={5}
+              mb={4}
               fontSize={{
-                base: "xl", // Tamaño de fuente más pequeño en pantallas pequeñas
-                md: "4xl",
+                base: "2xl", // text-3xl en pantallas pequeñas
+                sm: "4xl",  // sm:text-4xl en pantallas medianas
+                lg: "4xl",  // lg:text-4xl en pantallas grandes
               }}
               fontWeight="medium"
               letterSpacing="tight"
@@ -60,6 +61,7 @@ function Feature() {
             >
               Un espacio único en el corazón de Punta Hermosa
             </chakra.h2>
+
             <chakra.p
               mb={5}
               textAlign={{
@@ -119,8 +121,9 @@ function Feature() {
             <chakra.h2
               mb={4}
               fontSize={{
-                base: "xl",
-                md: "4xl",
+                base: "2xl", // text-3xl en pantallas pequeñas
+                sm: "4xl",  // sm:text-4xl en pantallas medianas
+                lg: "4xl",  // lg:text-4xl en pantallas grandes
               }}
               fontWeight="medium"
               letterSpacing="tight"
@@ -155,7 +158,7 @@ function Feature() {
              donde podrás disfrutar del pádel a tu propio ritmo
             ,con amigos o en familia, 
             tanto en temporada de verano o todo el año.
-            Ádemas de crear tu propia comunidad
+            Ádemas de crear tu propia comunidad.
             </chakra.p>
           </Box>
           <Box

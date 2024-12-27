@@ -1,8 +1,8 @@
-import { CardHoverEffectDemo } from "../Components/CardHoverEffectDemo";
+
 import { BackgroundBeamsWithCollisionDemo } from "../Components/BackgroundBeamsWithCollisionDemo";
 import AboutCompany from "../Components/AboutCompany";
 import Footer from "@/Components/Footer";
-import { InfiniteMovingCardsDemo } from "../Components/InfiniteMovingCardsDemo";
+
 import AboutUs from "@/Components/AboutUs";
 
 export default function Home() {
@@ -11,8 +11,6 @@ export default function Home() {
       <BackgroundBeamsWithCollisionDemo />
       <AboutUs/>
       <AboutCompany />
-      <CardHoverEffectDemo />
-      <InfiniteMovingCardsDemo/>
       <Footer />
     </div>
 
