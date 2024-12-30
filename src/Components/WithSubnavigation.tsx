@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -16,12 +17,12 @@ function Navbar() {
     >
       <div className="flex items-center justify-between mx-auto max-w-screen-xl p-4 text-white">
         {/* Logo centrado en pantallas pequeñas, alineado a la izquierda en pantallas grandes */}
-        <a
+        <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse absolute left-1/2 transform -translate-x-1/2 md:static md:translate-x-0 md:order-1"
         >
           <img src="prueba.png" className="h-16" alt="Logo" />
-        </a>
+        </Link>
 
         {/* Menú hamburguesa para pantallas pequeñas */}
         <button
@@ -56,20 +57,20 @@ function Navbar() {
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 md:mt-0 border border-gray-600 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:border-0 md:ml-auto">
             <li>
-              <a
+              <Link
                 href="/about"
                 className="block py-2 px-3 rounded hover:text-[#F0A500] text-xl md:text-lg"
               >
                 Sobre Nosotros
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/contact"
                 className="block py-2 px-3 rounded hover:text-[#F0A500] text-xl md:text-lg"
               >
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
