@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const router = useRouter();
+
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
