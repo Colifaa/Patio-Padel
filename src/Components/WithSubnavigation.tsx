@@ -1,130 +1,81 @@
-'use client'
+import React, { useState } from "react";
+import { useRouter } from "next/router";
 
-import {
-  Box,
-  Flex,
-  IconButton,
-  Stack,
-  Collapse,
-  useColorModeValue,
-  useDisclosure,
-  Image,
-} from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import { Link as ChakraLink } from '@chakra-ui/next-js'
+function Navbar() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const router = useRouter();
 
-export default function WithSubnavigation() {
-  const { isOpen, onToggle } = useDisclosure()
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
-    <Box position="relative">
-      <Flex
-        bg="#4e4b4c"
-        color="white"
-        minH="80px"
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        borderBottom="1px solid"
-        borderColor="#203C4C"
-        align="center"
-        justify="space-between"
-      >
-        <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
-          <IconButton
-            onClick={onToggle}
-            icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
-            variant="ghost"
-            aria-label="Toggle Navigation"
-          />
-        </Flex>
+    <nav
+      className="relative z-10"
+      style={{ backgroundColor: "#4e4b4c", borderBottom: "1px solid #203C4C" }}
+    >
+      <div className="flex items-center justify-between mx-auto max-w-screen-xl p-4 text-white">
+        {/* Logo centrado en pantallas pequeñas, alineado a la izquierda en pantallas grandes */}
+        <a
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse absolute left-1/2 transform -translate-x-1/2 md:static md:translate-x-0 md:order-1"
+        >
+          <img src="prueba.png" className="h-16" alt="Logo" />
+        </a>
 
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} align="center">
-          <ChakraLink href="/" _hover={{ textDecoration: 'none' }}>
-            <Image
-              src="Prueba.png"
-              alt="Logo"
-              width="200px"
-              height="80px"
-              objectFit="contain"
-              cursor="pointer"
-              padding="10px"
-            />
-          </ChakraLink>
-        </Flex>
-
-        <Flex display={{ base: 'none', md: 'flex' }} align="center" ml="auto">
-          <DesktopNav />
-        </Flex>
-      </Flex>
-
-      <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse>
-    </Box>
-  )
-}
-
-const DesktopNav = () => {
-  const linkHoverColor = useColorModeValue('#F0A500', '#F0A500')
-
-  return (
-    <Stack direction={'row'} spacing={6}>
-      {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
-          <ChakraLink
-            href={navItem.href ?? '#'}
-            fontSize="sm"
-            fontWeight={600}
-            textTransform="uppercase"
-            color="white"
-            _hover={{ color: linkHoverColor }}
+        {/* Menú hamburguesa para pantallas pequeñas */}
+        <button
+          onClick={toggleDropdown}
+          type="button"
+          className="relative inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-[#73675B] focus:outline-none focus:ring-2 focus:ring-gray-600"
+        >
+          <span className="sr-only">Open main menu</span>
+          <svg
+            className="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
           >
-            {navItem.label}
-          </ChakraLink>
-        </Box>
-      ))}
-    </Stack>
-  )
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        {/* Menú para pantallas grandes y desplegable para pequeñas */}
+        <div
+          id="mega-menu-full"
+          className={`${
+            isDropdownOpen ? "block" : "hidden"
+          } md:flex md:items-center md:space-x-8 bg-[#4e4b4c] md:bg-transparent absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto`}
+        >
+          <ul className="flex flex-col p-4 md:p-0 mt-4 md:mt-0 border border-gray-600 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:border-0 md:ml-auto">
+            <li>
+              <a
+                href="/about"
+                className="block py-2 px-3 rounded hover:text-[#F0A500] text-xl md:text-lg"
+              >
+                Sobre Nosotros
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contact"
+                className="block py-2 px-3 rounded hover:text-[#F0A500] text-xl md:text-lg"
+              >
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-const MobileNav = () => {
-  return (
-    <Stack bg="#333333" p={4} display={{ md: 'none' }}>
-      {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label} {...navItem} />
-      ))}
-    </Stack>
-  )
-}
-
-const MobileNavItem = ({ label, href }: NavItem) => {
-  return (
-    <Stack spacing={4}>
-      <ChakraLink
-        href={href ?? '#'}
-        fontWeight={600}
-        fontSize="md"
-        color="white"
-        _hover={{ color: '#F0A500' }}
-      >
-        {label}
-      </ChakraLink>
-    </Stack>
-  )
-}
-
-interface NavItem {
-  label: string
-  href?: string
-}
-
-const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: 'Sobre Nosotros',
-    href: '/about',
-  },
-  {
-    label: 'Contacto',
-    href: '/contact',
-  },
-]
+export default Navbar;

@@ -8,9 +8,9 @@ const AboutCompany = () => {
 
   const features = [
     { icon: faCalendarCheck, text: 'Reserva fácil y rápida de canchas.' },
-    { icon: faClock, text: 'Horarios de 90 minutos, de lunes a domingo durante todo el año.' },
-    { icon: faMapMarkerAlt, text: 'Ubicación accesible y estacionamiento.' },
-    { icon: faUsers, text: 'Ambiente ideal para jugadores de todos los niveles.' },
+    { icon: faClock, text: 'Turnos de 90 minutos todos los días.' },         
+    { icon: faMapMarkerAlt, text: 'Ubicación accesible y estacionamiento.' }, 
+    { icon: faUsers, text: 'Ambiente ideal para todo tipo de jugadores.' },  
   ];
 
   const handleAboutClick = () => {
@@ -40,7 +40,7 @@ const AboutCompany = () => {
         ¿Qué Ofrecemos?
       </h3>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 ">
         {features.map((feature, index) => (
           <div
             key={index}
