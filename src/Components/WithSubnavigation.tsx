@@ -20,7 +20,7 @@ function Navbar() {
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse absolute left-1/2 transform -translate-x-1/2 md:static md:translate-x-0 md:order-1"
         >
-          <img src="prueba.png" className="h-16" alt="Logo" />
+          <img src="Prueba.png" className="h-16" alt="Logo" />
         </Link>
 
         {/* Menú hamburguesa para pantallas pequeñas */}
