@@ -89,7 +89,7 @@ function Feature() {
               base: 20,
               md: 48,
             }}
-            bgImage="url('https://www.sportbs.es/wp-content/uploads/2018/07/Como-jugar-al-Padel.jpg')" // Reemplaza con la URL de la imagen
+            bgImage="Patio/7.jpeg" // Reemplaza con la URL de la imagen
             bgSize="cover"
             bgPosition="center"
             borderRadius="md"
@@ -171,7 +171,7 @@ function Feature() {
               base: 20,
               md: 48,
             }}
-            bgImage="url('https://img.freepik.com/fotos-premium/pelota-padel-cerca-red_23-2149459040.jpg')" // Reemplaza con la URL de la imagen
+            bgImage="Patio/3.jpeg" // Reemplaza con la URL de la imagen
             bgSize="cover"
             bgPosition="center"
             borderRadius="md"

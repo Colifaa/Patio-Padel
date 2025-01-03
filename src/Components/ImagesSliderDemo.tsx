@@ -11,13 +11,13 @@ export function ImagesSliderDemo() {
   };
 
   const images = [
-    "https://img.freepik.com/foto-gratis/gente-jugando-al-padel-dentro_23-2149444608.jpg",
-    "https://media.istockphoto.com/id/1402900022/es/foto/pareja-jugando-a-p%C3%A1del-en-corte.jpg?s=612x612&w=0&k=20&c=AtlchuPsY0RNFtgy5a1nxBEWrAhsTCGuZqrvuvsEsZI=",
-    "https://www.vallparc.com/wp-content/uploads/2022/05/Mask-group-18.png",
+    "Patio/2.jpeg",
+    "Patio/1.jpeg",
+    "Patio/6.jpeg",
   ];
 
   return (
-    <ImagesSlider className="h-screen sm:h-80 md:h-[30rem] lg:h-[40rem] bg-black relative" images={images}>
+    <ImagesSlider  className="h-screen sm:h-80 md:h-[30rem] lg:h-[48rem] bg-black relative overflow-hidden" images={images}>
       <motion.div
         initial={{
           opacity: 0,
@@ -30,7 +30,7 @@ export function ImagesSliderDemo() {
         transition={{
           duration: 0.6,
         }}
-        className="absolute inset-0 z-20 flex justify-center items-center p-4"
+        className="absolute inset-0 z-20 flex justify-center items-center p-4 "
       >
         <div className="max-w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[60%]">
           <VortexDemo />

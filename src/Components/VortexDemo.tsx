@@ -14,7 +14,7 @@ export function VortexDemo() {
         <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
           Sobre Nosotros
         </h2>
-        <p className="text-white text-sm md:text-2xl max-w-xl mt-6 text-center">
+        <p className="text-white text-xl md:text-2xl max-w-xl mt-6 text-center">
         En Patio Padel, ofrecemos un espacio único para disfrutar
              de este deporte, con canchas de primer nivel
               y un ambiente ideal pensado para todos.

@@ -81,9 +81,7 @@ export default function FAQSection() {
                   </AccordionButton>
                   <AccordionPanel pb={4}>
                     <Text color="black" fontWeight="normal">
-                      Durante la temporada de verano, nuestros horarios son: Lunes a
-                      Jueves: 6:00 a 22:00, Viernes y Sábados: 6:00am a 00:00, Domingos:
-                      6:00am a 22:00. ¡Te esperamos!
+                      Durante la temporada de verano, nuestros horarios son: lunes a domingo: 6:00 am a 22:30 ¡Te esperamos!
                     </Text>
                   </AccordionPanel>
                 </>
