@@ -52,9 +52,9 @@ function Navbar() {
           id="mega-menu-full"
           className={`${
             isDropdownOpen ? "block" : "hidden"
-          } md:flex md:items-center md:space-x-8 bg-[#4e4b4c] md:bg-transparent absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto`}
+          } md:flex md:items-center md:space-x-8 bg-[#4e4b4c] md:bg-transparent absolute md:relative top-12 md:top-0 left-0 md:left-auto w-full md:w-auto`}
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 md:mt-0 border border-gray-600 rounded-lg md:space-x-2 rtl:space-x-reverse md:flex-row md:border-0 md:ml-auto">
+          <ul className="flex flex-col p-2 md:p-0 mt-4 md:mt-0 border border-gray-600 rounded-lg md:space-x-2 rtl:space-x-reverse md:flex-row md:border-0 md:ml-auto">
             <li>
               <Link
                 href="/about"
