@@ -57,7 +57,7 @@ function Feature() {
                 base: "shorter",
                 md: "shorter",
               }}
-              textShadow="2px 0 currentcolor"
+              
             >
               Un espacio único en el corazón de Punta Hermosa
             </chakra.h2>
@@ -132,7 +132,7 @@ function Feature() {
                 md: "left",
               }}
               color="black"
-                textShadow="2px 0 currentcolor"
+
               lineHeight={{
                 base: "shorter",
                 md: "shorter",

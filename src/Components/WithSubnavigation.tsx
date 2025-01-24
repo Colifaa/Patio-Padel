@@ -14,7 +14,7 @@ function Navbar() {
       className="relative z-10"
       style={{ backgroundColor: "#4e4b4c", borderBottom: "1px solid #203C4C" }}
     >
-      <div className="flex items-center justify-between mx-auto max-w-screen-xl p-4 text-white">
+      <div className="flex items-center justify-between mx-auto max-w-screen-xl p-2 text-white">
         {/* Logo centrado en pantallas pequeñas, alineado a la izquierda en pantallas grandes */}
         <Link
           href="/"
@@ -54,7 +54,7 @@ function Navbar() {
             isDropdownOpen ? "block" : "hidden"
           } md:flex md:items-center md:space-x-8 bg-[#4e4b4c] md:bg-transparent absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto`}
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 md:mt-0 border border-gray-600 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:border-0 md:ml-auto">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 md:mt-0 border border-gray-600 rounded-lg md:space-x-2 rtl:space-x-reverse md:flex-row md:border-0 md:ml-auto">
             <li>
               <Link
                 href="/about"
