@@ -58,7 +58,7 @@ function Navbar() {
             <li>
               <Link
                 href="/about"
-                className="block py-2 px-3 rounded hover:text-[#F0A500] text-xl md:text-lg"
+                className="block py-2 px-3 rounded hover:text-[#D8C3A5] text-xl md:text-lg"
               >
                 Sobre Nosotros
               </Link>
@@ -66,7 +66,7 @@ function Navbar() {
             <li>
               <Link
                 href="/contact"
-                className="block py-2 px-3 rounded hover:text-[#F0A500] text-xl md:text-lg"
+                className="block py-2 px-3 rounded hover:text-[#D8C3A5] text-xl md:text-lg"
               >
                 Contacto
               </Link>
